@@ -1,0 +1,46 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../agenda"
+    },
+    {
+      "path": "../contracts"
+    },
+    {
+      "path": "../engines"
+    },
+    {
+      "path": "../hub"
+    },
+    {
+      "path": "../gateway"
+    },
+    {
+      "path": "../context"
+    },
+    {
+      "path": "../connectors"
+    },
+    {
+      "path": "../devices"
+    },
+    {
+      "path": "../relay-host"
+    },
+    {
+      "path": "../relay-consumer"
+    },
+    {
+      "path": "../operations"
+    }
+  ]
+}

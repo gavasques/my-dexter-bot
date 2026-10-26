@@ -1,0 +1,25 @@
+import { z } from 'zod';
+const id=z.string().regex(/^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$/), rev=z.number().int().min(0).max(Number.MAX_SAFE_INTEGER-1), hash=z.string().regex(/^[a-f0-9]{64}$/);
+export const MemoryLearningEvidenceSchema=z.object({sourceId:id,role:z.enum(['user','assistant','memory']),start:rev,end:rev,sha256:hash}).strict().refine(v=>v.end>v.start&&v.end-v.start<=8192);
+export type MemoryLearningEvidence=z.infer<typeof MemoryLearningEvidenceSchema>;
+export const MemoryLearningPolicyInputSchema=z.object({expectedRevision:rev,enabled:z.boolean(),maintenanceEnabled:z.boolean(),dreamingEnabled:z.boolean(),minIdleMs:z.number().int().min(120000).max(86400000).default(120000),maxJobsPerDay:z.number().int().min(1).max(8).default(8),maxProposalsPerJob:z.number().int().min(1).max(4).default(4),timezone:z.string().max(128).default('America/Sao_Paulo').refine(v=>{try{new Intl.DateTimeFormat('en',{timeZone:v});return true;}catch{return false;}}),nightHour:z.number().int().min(0).max(23).nullable().default(null)}).strict().refine(v=>v.enabled||!v.maintenanceEnabled&&!v.dreamingEnabled);
+export type MemoryLearningPolicyInput=z.infer<typeof MemoryLearningPolicyInputSchema>;
+export interface MemoryLearningPolicy extends Omit<MemoryLearningPolicyInput,'expectedRevision'>{revision:number;scopeEpoch:number;botRevision:number;profileId:string;grantRevision:number;actionId:string|null;updatedAt:number}
+export const MemoryLearningCandidateSchema=z.object({id,content:z.string().min(1).max(4096).refine(v=>{for(let i=0;i<v.length;i++){const c=v.charCodeAt(i);if(c>=0xd800&&c<=0xdbff){const n=v.charCodeAt(++i);if(!(n>=0xdc00&&n<=0xdfff))return false;}else if(c>=0xdc00&&c<=0xdfff)return false;}return true;}),kind:z.enum(['preference','fact','procedure','hypothesis','contradiction']),confidence:z.enum(['explicit','supported','uncertain']),evidence:z.array(MemoryLearningEvidenceSchema).min(1).max(8),expectedRevision:rev,scopeEpoch:rev,policyRevision:rev,state:z.enum(['pending','accepted','rejected','withdrawn']),jobId:id,createdAt:rev}).strict();
+export type MemoryLearningCandidate=z.infer<typeof MemoryLearningCandidateSchema>;
+export const MemoryLearningCommandSchema=z.discriminatedUnion('operation',[
+ z.object({operation:z.literal('policy.update'),input:MemoryLearningPolicyInputSchema}).strict(),
+ ...(['candidate.accept','candidate.reject'] as const).map(operation=>z.object({operation:z.literal(operation),input:z.object({id,expectedRevision:rev,policyRevision:rev,scopeEpoch:rev}).strict()}).strict()),
+ ...(['record.archive','record.forget','record.undo'] as const).map(operation=>z.object({operation:z.literal(operation),input:z.object({id,expectedRevision:rev,policyRevision:rev,scopeEpoch:rev}).strict()}).strict()),
+ z.object({operation:z.literal('maintenance.run'),input:z.object({policyRevision:rev,scopeEpoch:rev}).strict()}).strict(),
+]);
+export type MemoryLearningCommand=z.infer<typeof MemoryLearningCommandSchema>;
+export const MemoryLearningModelOutputSchema=z.object({proposals:z.array(z.object({content:MemoryLearningCandidateSchema.shape.content,kind:z.enum(['preference','fact','procedure','hypothesis','contradiction']),confidence:z.enum(['explicit','supported','uncertain']),evidence:z.array(MemoryLearningEvidenceSchema).min(1).max(8)}).strict()).max(4)}).strict();
+export type MemoryLearningModelOutput=z.infer<typeof MemoryLearningModelOutputSchema>;
+export interface MemoryLearningJob {id:string;kind:'capture'|'dreaming';state:'queued'|'claimed'|'dispatched'|'proposed'|'empty'|'unknown'|'withdrawn'|'conflict';inputHash:string;scopeEpoch:number;policyRevision:number;fence:number;createdAt:number;updatedAt:number}
+export interface MemoryLearningRecord {id:string;content:string|null;kind:string;revision:number;sha256:string;scopeEpoch:number;state:'active'|'archived'|'expired'|'forgotten';evidence:MemoryLearningEvidence[];createdAt:number}
+export interface MemoryLearningStatus {botId:string;policy:MemoryLearningPolicy;effectiveEnabled:boolean;mode:'propose';extractor:'official_driver'|'unconfigured';backend:'available_unverified'|'unavailable';purge:'durable_reconciliation';history:'retained';reason:string|null}
+export interface MemoryLearningReceipt {actionId:string;botId:string;ownerId:string;requestHash:string;operation:MemoryLearningCommand['operation'];inputHash:string;result:unknown;committedAt:number}
+/** Root inserts this descriptor in the Hub finishTurn transaction, never raw attachments/tools. */
+export interface MemoryCaptureIntent {id:string;turnId:string;threadId:string;botId:string;inputMessageId:string;outputMessageId:string;inputHash:string;outputHash:string;finishedAt:number;audience:'private'|'team';audienceRevision:number;scopeEpoch:number|null;policyRevision:number|null;state:'queued'|'consumed'|'withdrawn'}
+export const MemoryLearningPolicySchema=z.object({...MemoryLearningPolicyInputSchema.shape,revision:rev,scopeEpoch:rev,botRevision:rev,profileId:id,grantRevision:rev,actionId:id.nullable(),updatedAt:rev}).omit({expectedRevision:true}).strict().refine(v=>v.enabled||!v.maintenanceEnabled&&!v.dreamingEnabled);

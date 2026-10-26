@@ -1,0 +1,50 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/contracts"
+    },
+    {
+      "path": "packages/engines"
+    },
+    {
+      "path": "packages/hub"
+    },
+    {
+      "path": "packages/cli"
+    },
+    {
+      "path": "packages/gateway"
+    },
+    {
+      "path": "packages/context"
+    },
+    {
+      "path": "packages/connectors"
+    },
+    {
+      "path": "packages/devices"
+    },
+    {
+      "path": "packages/agenda"
+    },
+    {
+      "path": "packages/relay"
+    },
+    {
+      "path": "packages/operations"
+    },
+    {
+      "path": "packages/relay-service"
+    },
+    {
+      "path": "packages/relay-consumer"
+    },
+    {
+      "path": "packages/relay-host"
+    },
+    {
+      "path": "packages/connections-service"
+    }
+  ]
+}

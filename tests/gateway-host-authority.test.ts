@@ -1,0 +1,52 @@
+import assert from "node:assert/strict";
+import { mkdtempSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { DatabaseSync } from "node:sqlite";
+import test from "node:test";
+import { HostStore, HostError } from "@dexter/hub";
+
+test("extension metadata callbacks stop before mutation when the canonical writer is fenced or closed", t => {
+  const dataDir = mkdtempSync(join(tmpdir(), "dexter-extension-authority-"));
+  const store = new HostStore({ dataDir });
+  t.after(() => { store.close(); rmSync(dataDir, { recursive: true, force: true }); });
+  let mutations = 0;
+  assert.equal(store.withWriterLease(() => ++mutations), 1);
+  const raw = new DatabaseSync(store.databasePath);
+  raw.exec("UPDATE host_lease SET token = 'replaced-by-test'");
+  raw.close();
+  const locked = (e: unknown) => e instanceof HostError && e.code === "host_locked";
+  assert.throws(() => store.withWriterLease(() => ++mutations), locked);
+  assert.equal(mutations, 1);
+  store.close();
+  assert.throws(() => store.withWriterLease(() => ++mutations), locked);
+  assert.equal(mutations, 1);
+});
+
+test("authority withdrawal has a permission_changed receipt and does not falsify running effects", t => {
+  const dataDir = mkdtempSync(join(tmpdir(), "dexter-extension-actions-"));
+  const store = new HostStore({ dataDir });
+  t.after(() => { store.close(); rmSync(dataDir, { recursive: true, force: true }); });
+  const bot = store.createBot({ name: "Synthetic", profileId: "synthetic", engine: "claude" });
+  const thread = store.createThread(bot.id);
+  const request = (key: string) => ({ botId: bot.id, threadId: thread.id, tool: "test.read", destination: "test-connection", arguments: {}, idempotencyKey: key });
+  store.setGrant({ botId: bot.id, tool: "test.read", destination: "test-connection", policy: "ask" });
+  const pending = store.requestAction(request("ask"));
+  assert.equal(store.blockAction(pending.id).state, "blocked");
+  assert.equal(store.getAction(pending.id).reason, "permission_changed");
+  assert.throws(() => store.decideAction(pending.id, { decision: "allow", requestHash: pending.requestHash }));
+  store.setGrant({ botId: bot.id, tool: "test.read", destination: "test-connection", policy: "allow" });
+  const ready = store.requestAction(request("allow"));
+  assert.equal(store.blockAction(ready.id).state, "blocked");
+  const running = store.requestAction(request("running"));
+  store.claimAction(running.id);
+  assert.equal(store.blockAction(running.id).state, "running");
+  store.markUnknown(running.id, "executor_error");
+  assert.equal(store.blockAction(running.id).state, "unknown");
+  assert.equal(store.findAction(bot.id, "ask")?.id, pending.id);
+  assert.equal(store.findAction(bot.id, "missing"), null);
+  const other = store.createBot({ name: "Other", profileId: "synthetic", engine: "claude" });
+  assert.equal(store.findAction(other.id, "ask"), null);
+  const transitions = store.listEvents().filter(e => e.entityId === pending.id && e.kind === "action.blocked");
+  assert.equal(transitions.length, 1);
+});

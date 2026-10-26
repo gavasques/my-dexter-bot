@@ -1,0 +1,22 @@
+{
+  "name": "@dexter/operations",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@dexter/hub": "workspace:*",
+    "@dexter/devices": "workspace:*",
+    "@dexter/connectors": "workspace:*",
+    "@dexter/gateway": "workspace:*",
+    "@dexter/contracts": "workspace:*"
+  },
+  "bin": {
+    "dexter-ops": "./dist/bin.js"
+  }
+}

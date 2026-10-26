@@ -1,0 +1,22 @@
+# Template only. Replace all three placeholders with absolute values for the
+# target Linux host. SERVICE_PATH is non-secret and must resolve bash,
+# python3 and an already installed Node.js 24; do not put credentials in this unit.
+# For this example, keep placeholder values free of literal %, $, and backslash.
+# WorkingDirectory is deliberately unquoted; ExecStart path arguments are
+# quoted so absolute paths containing spaces remain one argument.
+[Unit]
+Description=Dexter single-owner host (local template)
+StartLimitIntervalSec=300s
+StartLimitBurst=5
+
+[Service]
+Type=simple
+WorkingDirectory=__REPOSITORY_ABSOLUTE_PATH__
+Environment="PATH=__SERVICE_PATH__"
+ExecStart="__REPOSITORY_ABSOLUTE_PATH__/ops/local-host/scripts/launch.sh" --start --data-dir "__PERSISTENT_DATA_DIRECTORY__"
+Restart=on-failure
+RestartSec=10s
+UMask=0077
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "description": "Public synthetic framing/signature vector. No private keys; not a production credential.",
+  "sender": {
+    "installationId": "vector-installation",
+    "ownerId": "vector-owner",
+    "deviceId": "vector-sender",
+    "generation": 1,
+    "keyId": "vector-signing-1",
+    "signingPublicKey": "MCowBQYDK2VwAyEACso+KcP2v8s1y0C0frjSMJBhr8QZR3nDafpQi2lx/kI=",
+    "encryptionPublicKey": "MCowBQYDK2VuAyEAOW4A5xYJdKzNHunadzEaFtkkWQCA7I6UaOD8UB3J6Q4="
+  },
+  "envelope": {
+    "version": 1,
+    "installationId": "vector-installation",
+    "ownerId": "vector-owner",
+    "messageId": "public-vector-message",
+    "senderId": "vector-sender",
+    "senderGeneration": 1,
+    "senderKeyId": "vector-signing-1",
+    "recipientId": "vector-recipient",
+    "recipientGeneration": 1,
+    "recipientKeyId": "vector-recipient-1",
+    "type": "event",
+    "sequence": 1,
+    "createdAt": 1800000000000,
+    "expiresAt": 1800000060000,
+    "ephemeralPublicKey": "MCowBQYDK2VuAyEAikgSUloVxNOwmWBe1S1TpvYNQ4iLbbTF7v451riW4n4=",
+    "nonce": "////////////////",
+    "ciphertext": "o1rYbOMqrkcOc74zK6nvazgTG6QBO1C3bvSs5Q4=",
+    "tag": "Z6MzSuH8OhUP1+vYDeFmIg==",
+    "signature": "RqQDcTythT9FGZz11zKtvJpNNhLWk5Marz2RRX13KXTEQGSLlA/BsutXwELLo68PviWZB6T3ZrZhxWvVDkE0CQ=="
+  },
+  "headerHex": "5b312c22766563746f722d696e7374616c6c6174696f6e222c22766563746f722d6f776e6572222c227075626c69632d766563746f722d6d657373616765222c22766563746f722d73656e646572222c312c22766563746f722d7369676e696e672d31222c22766563746f722d726563697069656e74222c312c22766563746f722d726563697069656e742d31222c226576656e74222c312c313830303030303030303030302c313830303030303036303030302c224d436f77425159444b32567541794541696b6753556c6f56784e4f776d574265315331547076594e5134694c626254463776343531726957346e343d222c222f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f225d",
+  "signedBytesBase64": "REVYVEVSX1JFTEFZX0VOVkVMT1BFX1YxClsxLCJ2ZWN0b3ItaW5zdGFsbGF0aW9uIiwidmVjdG9yLW93bmVyIiwicHVibGljLXZlY3Rvci1tZXNzYWdlIiwidmVjdG9yLXNlbmRlciIsMSwidmVjdG9yLXNpZ25pbmctMSIsInZlY3Rvci1yZWNpcGllbnQiLDEsInZlY3Rvci1yZWNpcGllbnQtMSIsImV2ZW50IiwxLDE4MDAwMDAwMDAwMDAsMTgwMDAwMDA2MDAwMCwiTUNvd0JRWURLMlZ1QXlFQWlrZ1NVbG9WeE5Pd21XQmUxUzFUcHZZTlE0aUxiYlRGN3Y0NTFyaVc0bjQ9IiwiLy8vLy8vLy8vLy8vLy8vLyJdClsibzFyWWJPTXFya2NPYzc0eks2bnZhemdURzZRQk8xQzNidlNzNVE0PSIsIlo2TXpTdUg4T2hVUDErdllEZUZtSWc9PSJd",
+  "bodyDigest": "d54dc2a3433151860992c19e5e8da31997e08e608a188a9d7bb087250c220249",
+  "ack": {
+    "version": 1,
+    "installationId": "vector-installation",
+    "ownerId": "vector-owner",
+    "deviceId": "vector-sender",
+    "generation": 1,
+    "keyId": "vector-signing-1",
+    "requestId": "public-vector-ack",
+    "issuedAt": 1800000000000,
+    "kind": "ack",
+    "messages": [
+      {
+        "messageId": "public-vector-message",
+        "receiptId": "public-vector-receipt"
+      }
+    ],
+    "signature": "JeOjiiXTD6P43PE2jydXX9jfjAEzPKjpTh3jK+ctzKkL8TMftZheBv/5MAnydkUWOkUuy3WUttKOEJTGzDfKBg=="
+  },
+  "controlBytesHex": "4445585445525f52454c41595f434f4e54524f4c5f56310a5b312c2261636b222c22766563746f722d696e7374616c6c6174696f6e222c22766563746f722d6f776e6572222c22766563746f722d73656e646572222c312c22766563746f722d7369676e696e672d31222c227075626c69632d766563746f722d61636b222c313830303030303030303030302c5b5b227075626c69632d766563746f722d6d657373616765222c227075626c69632d766563746f722d72656365697074225d5d5d"
+}

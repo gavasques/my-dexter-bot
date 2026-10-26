@@ -1,0 +1,20 @@
+{
+  "name": "@dexter/connectors",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@dexter/contracts": "workspace:*",
+    "@dexter/gateway": "workspace:*",
+    "@modelcontextprotocol/client": "2.3.1",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "re2-wasm": "1.0.2"
+  }
+}

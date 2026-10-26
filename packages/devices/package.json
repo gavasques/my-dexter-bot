@@ -1,0 +1,6 @@
+{
+  "name": "@dexter/devices", "version": "0.0.1", "private": true, "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "bin": { "dexter-device-daemon": "./dist/daemon-main.js" },
+  "dependencies": { "@dexter/contracts": "workspace:*", "@dexter/hub": "workspace:*" }
+}

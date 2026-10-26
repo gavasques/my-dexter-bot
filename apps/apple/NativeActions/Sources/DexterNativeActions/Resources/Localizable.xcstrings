@@ -1,0 +1,76 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "A conversation ID issued by your Dexter host; Dexter validates it again." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "ID de conversa emitido pelo host Dexter; o app valida novamente." } }
+      }
+    },
+    "Conversation ID" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "ID da conversa" } }
+      }
+    },
+    "Draft staged in Dexter. Review it in the app; it has not been sent." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Rascunho preparado no Dexter. Revise no app; a mensagem não foi enviada." } }
+      }
+    },
+    "Message draft" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Rascunho da mensagem" } }
+      }
+    },
+    "Open a host-issued conversation ID in Dexter. The app checks current host access." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Abre no Dexter uma conversa identificada pelo host. O app verifica o acesso atual ao host." } }
+      }
+    },
+    "Open conversation" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Abrir conversa" } }
+      }
+    },
+    "Open a conversation in Dexter" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Abrir uma conversa no Dexter" } }
+      }
+    },
+    "Open Dexter to view this conversation. The host may be offline." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Abra o Dexter para ver esta conversa. O host pode estar offline." } }
+      }
+    },
+    "Prepare a message" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Preparar mensagem" } }
+      }
+    },
+    "Prepare a draft in Dexter" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Preparar um rascunho no Dexter" } }
+      }
+    },
+    "Open Dexter with a bounded draft for review. This intent never sends the message." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Abre o Dexter com um rascunho limitado para revisão. Este intent nunca envia a mensagem." } }
+      }
+    },
+    "This conversation request is invalid or could not be handed to Dexter." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "O pedido desta conversa é inválido ou não pôde ser encaminhado ao Dexter." } }
+      }
+    },
+    "This draft request is invalid or could not be handed to Dexter." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "O pedido do rascunho é inválido ou não pôde ser encaminhado ao Dexter." } }
+      }
+    },
+    "A draft up to 4,096 UTF-16 code units. Dexter will ask you to review before sending." : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Rascunho de até 4.096 unidades UTF-16. O Dexter pedirá sua revisão antes do envio." } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

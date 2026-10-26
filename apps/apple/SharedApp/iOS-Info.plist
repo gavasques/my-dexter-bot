@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Dexter</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>O Dexter conecta este app à base do seu Mac e aos aparelhos pareados, quando você solicitar.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>To let you explicitly request up to ten event titles and start times in the next 30 days from Dexter's local capability screen.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To let you explicitly request one coordinate rounded to 0.01 degrees while using Dexter; iOS and your settings determine acquisition precision.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To scan your Mac’s private Dexter pairing QR code when you tap Scan, or capture one image when you request it in device capabilities.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>To let you explicitly start up to ten seconds of microphone input, kept in memory only, from Dexter's local capability screen.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

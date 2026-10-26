@@ -1,0 +1,91 @@
+name: DexterApple
+options:
+  bundleIdPrefix: com.dexter.bot
+  deploymentTarget:
+    macOS: "14.0"
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  DexterApple:
+    path: .
+  DexterIOSCapabilities:
+    path: Capabilities
+targets:
+  DexterMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: SharedApp/Sources
+      - path: SharedApp/Resources/Localizable.xcstrings
+        buildPhase: resources
+      - path: SharedApp/Resources/Mac/en.lproj/InfoPlist.strings
+        buildPhase: resources
+      - path: SharedApp/Resources/Mac/pt-BR.lproj/InfoPlist.strings
+        buildPhase: resources
+      - path: SharedApp/Resources/DexterAppIcon.icns
+        buildPhase: resources
+    dependencies:
+      - package: DexterApple
+        product: DexterHostClient
+      - package: DexterApple
+        product: DexterAppCore
+    info:
+      path: SharedApp/Info.plist
+      properties:
+        CFBundleDisplayName: Dexter
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleIconFile: DexterAppIcon
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSLocalNetworkUsageDescription: O Dexter conecta este app à base do seu Mac e aos aparelhos pareados, quando você solicitar.
+        NSMicrophoneUsageDescription: O Dexter usa o microfone quando você inicia uma conversa por voz ao vivo e envia o áudio à OpenAI durante a sessão. Você pode silenciar ou parar a sessão a qualquer momento.
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dexter.bot.mac
+        PRODUCT_NAME: Dexter
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0"
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: SharedApp/Info.plist
+  DexterIOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: SharedApp/Sources
+    dependencies:
+      - package: DexterApple
+        product: DexterHostClient
+      - package: DexterApple
+        product: DexterAppCore
+      - package: DexterIOSCapabilities
+        product: DexterIOSCapabilities
+    resources:
+      - path: SharedApp/Resources/Localizable.xcstrings
+      - path: SharedApp/Resources/en.lproj/InfoPlist.strings
+      - path: SharedApp/Resources/pt-BR.lproj/InfoPlist.strings
+    info:
+      path: SharedApp/iOS-Info.plist
+      properties:
+        CFBundleDisplayName: Dexter
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSLocalNetworkUsageDescription: O Dexter conecta este app à base do seu Mac e aos aparelhos pareados, quando você solicitar.
+        NSCalendarsFullAccessUsageDescription: Para permitir que você solicite explicitamente até dez títulos e horários de início de eventos nos próximos 30 dias na tela local de capacidades do Dexter.
+        NSLocationWhenInUseUsageDescription: Para permitir que você solicite explicitamente uma coordenada arredondada a 0,01° enquanto usa o Dexter; o iOS e seus ajustes determinam a precisão coletada.
+        NSCameraUsageDescription: Para escanear o QR privado de pareamento do seu Mac quando você tocar em Escanear, ou capturar uma imagem quando solicitar nas capacidades do dispositivo.
+        NSMicrophoneUsageDescription: Para permitir que você inicie explicitamente até dez segundos de áudio pelo microfone, somente em memória, na tela local de capacidades do Dexter.
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dexter.bot.ios
+        PRODUCT_NAME: Dexter
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0"
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: SharedApp/iOS-Info.plist

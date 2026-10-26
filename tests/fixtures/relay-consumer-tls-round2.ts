@@ -1,0 +1,42 @@
+// Synthetic loopback proof, trusted fixture authority only; no production custody/account claim.
+import assert from 'node:assert/strict';
+import { chmodSync, mkdtempSync, realpathSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import type { TestContext } from 'node:test';
+import { RelayEndpoint, RelayStore } from '@dexter/relay';
+import { HostServices } from '../../packages/cli/src/host-services.js';
+import { PinnedRelayTransport, RelayService } from '../../packages/relay-service/src/index.js';
+import { RelayConsumer, type RelayPrincipal } from '../../packages/relay-consumer/src/index.js';
+import { createRelayMemoryCa, createRelayMemoryLeaf, type RelayMemoryLeaf } from './relay-memory-tls.js';
+import { canonicalHost } from './relay-consumer-host.js';
+export async function tlsHostComposition(t:TestContext, earlyFailure?:(root:string,stage:"directory"|"certificates"|"host"|"service")=>void):Promise<void>{
+  let root=mkdtempSync(join(tmpdir(),"dexter-relay-consumer-tls-r3-"));
+  let services:HostServices|undefined,relay:RelayStore|undefined,service:RelayService|undefined,transport:PinnedRelayTransport|undefined,consumer:RelayConsumer|undefined;
+  let tlsLeaf:RelayMemoryLeaf|undefined,caCert:Buffer|undefined;
+  t.after(async()=>{try{await consumer?.close();}finally{try{await transport?.close();}finally{try{await service?.close();}finally{try{relay?.close();}finally{try{await services?.shutdown();}finally{tlsLeaf?.key.fill(0);caCert?.fill(0);rmSync(root,{recursive:true,force:true});}}}}}});
+  root=realpathSync(root);chmodSync(root,0o700);
+  earlyFailure?.(root,"directory");
+  const now=Date.now();
+  const ca=createRelayMemoryCa("Consumer Lab CA",new Date(now-7*86400000),new Date(now+7*86400000));
+  const issuedLeaf=createRelayMemoryLeaf("host","relay.test",ca,["DNS:relay.test"]);
+  tlsLeaf=issuedLeaf;
+  const issuedCaCert=Buffer.from(ca.identity.certPem);
+  caCert=issuedCaCert;
+  earlyFailure?.(root,"certificates");
+  let effects=0;services=new HostServices({dataDir:join(root,'host'),enableEngines:true,makeDriver:engine=>({id:engine,capabilities:{resume:true,interrupt:true,fork:false,steer:false},async status(){return {engine,installed:true,version:'fixture',authentication:'unknown',billing:'subscription'};},async open(threadId){return {threadId,nativeCursor:'synthetic'};},async *turn(session,turnId){effects++;yield {type:'turn.completed',threadId:session.threadId,turnId,usage:{}};},async close(){},async interrupt(){},async respondToTool(){}})});
+  earlyFailure?.(root,"host");
+  const store=services.store,runtime=services.runtime!;const bot=store.createBot({name:'TLS Fixture',profileId:'fixture',engine:'claude'}),thread=store.createThread(bot.id);
+  const enrolled=store.registerClientDeviceForClaim({namespace:'app-client-v1',claimId:'tls_fixture',name:'Fixture',fingerprint:'e'.repeat(64),role:'client-ios',scopes:['chat.write']});
+  const endpoint=(deviceId:string)=>new RelayEndpoint({ownerId:store.ownerId,installationId:store.hostId,deviceId,generation:1,keyId:deviceId+'_key'});const sender=endpoint('tls_sender'),receiver=endpoint('tls_receiver');
+  relay=new RelayStore({dataDir:join(root,'relay'),ownerId:store.ownerId,installationId:store.hostId});relay.registerDevice(sender.publicPin);relay.registerDevice(receiver.publicPin);
+  const startedService=await RelayService.start({store:{borrow:relay},tls:{key:issuedLeaf.key,cert:issuedLeaf.cert},host:'127.0.0.1',port:0});service=startedService;
+  earlyFailure?.(root,"service");
+  transport=new PinnedRelayTransport({host:'127.0.0.1',port:startedService.address.port,servername:'relay.test',ca:issuedCaCert,leafSha256:issuedLeaf.pin,timeoutMs:3000});
+  const principal:RelayPrincipal={hostId:store.hostId,ownerId:store.ownerId,canonicalDeviceId:enrolled.deviceId,tlsFingerprint:enrolled.fingerprint,role:enrolled.role,scopes:['chat.write'],pinGeneration:1,bindingRevision:1,senderPin:sender.publicPin,recipientPin:receiver.publicPin};
+  let current=true;consumer=new RelayConsumer({host:canonicalHost(store,runtime),directory:join(root,'host'),transport,opener:receiver,authority:{candidate:e=>e.senderId===sender.publicPin.deviceId?principal:null,isCurrent:p=>current&&p.canonicalDeviceId===enrolled.deviceId&&store.getDevice(p.canonicalDeviceId).revokedAt===null}});
+  const envelope=(messageId:string,sequence:number)=>{const now=Date.now();return sender.seal(receiver.publicPin,{messageId,sequence,type:'command',createdAt:now,expiresAt:now+60000},Buffer.from(JSON.stringify({version:1,operation:'turn.submit',operationId:'tls_operation',threadId:thread.id,content:'synthetic TLS input'})));};
+  await transport.enqueue(envelope('tls_message_1',1));assert.equal(startedService.status().acceptedConnections,1);const first=await consumer.wake();assert.equal(first.accepted,1);assert.equal(first.acked,1);await runtime.waitForTurn(store.listTurns(thread.id)[0]!.id);assert.equal(effects,1);assert.equal(startedService.status().acceptedConnections,3,'fresh pinned TLS for enqueue/poll/ACK');
+  await transport.enqueue(envelope('tls_message_2',2));const replay=await consumer.wake();assert.equal(replay.replayed,1);assert.equal(replay.acked,1);assert.equal(effects,1);assert.equal(store.listTurns(thread.id).length,1);
+  current=false;store.revokeDevice(enrolled.deviceId);await transport.enqueue(envelope('tls_message_3',3));const denied=await consumer.wake();assert.equal(denied.blocked,1);assert.equal(denied.acked,0);assert.equal(relay.status().pending,1);assert.equal(effects,1);
+}

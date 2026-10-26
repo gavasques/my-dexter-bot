@@ -1,0 +1,2 @@
+"NSLocalNetworkUsageDescription" = "O Dexter conecta este app à base do seu Mac e aos aparelhos pareados, quando você solicitar.";
+"NSMicrophoneUsageDescription" = "O Dexter usa o microfone quando você inicia uma conversa por voz ao vivo e envia o áudio à OpenAI durante a sessão. Você pode silenciar ou parar a sessão a qualquer momento.";

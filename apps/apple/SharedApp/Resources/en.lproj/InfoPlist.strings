@@ -1,0 +1,6 @@
+"NSCalendarsFullAccessUsageDescription" = "To let you explicitly request up to ten event titles and start times in the next 30 days from Dexter's local capability screen.";
+"NSLocationWhenInUseUsageDescription" = "To let you explicitly request one coordinate rounded to 0.01 degrees while using Dexter; iOS and your settings determine acquisition precision.";
+"NSCameraUsageDescription" = "To scan your Mac’s private Dexter pairing QR code when you tap Scan, or capture one image when you request it in device capabilities.";
+"NSMicrophoneUsageDescription" = "To let you explicitly start up to ten seconds of microphone input, kept in memory only, from Dexter's local capability screen.";
+
+"NSLocalNetworkUsageDescription" = "Dexter connects this app to your Mac’s host and paired devices when you request it.";

@@ -1,0 +1,24 @@
+{
+  "classification": "EXACT_HISTORICAL_HUB_V3_SOURCE_FIXTURE",
+  "files": {
+    "package.json": "1239d4d885dcad42201a27ed9324f8f0f760b78700d8db9ced39a511cffe7eae",
+    "packages/contracts/package.json": "7102db8273c2509f92904c152cc7a08350c50e6b4639c418e61fc2bc96fb44ae",
+    "packages/contracts/src/index.ts": "62813dc412e60a68eee3791bb0a6eb63385d744842df4e18a7259e203a4df5d7",
+    "packages/contracts/tsconfig.json": "5b4b55bfb81fb6c8f607e25828289d11f790a112b724e25c13a2bc5d60050aec",
+    "packages/hub/package.json": "3e747df50d537887906af0b29f6e1f935618ef9957477de3f39caf2ae80a5e50",
+    "packages/hub/src/dispatcher.ts": "e1c02b10731bb87f58cf3302c3998c6da64a509cc3f1c0f59fa5f12ff0782d79",
+    "packages/hub/src/errors.ts": "64f61838199295bed5bba5c63480dd25b240f5bcc93a91c1588df29702b8b265",
+    "packages/hub/src/http-routes.ts": "4122d4294aa2a56f10db19d53e28f59a7ffbea3b6cbd9567134523737b7a7a4a",
+    "packages/hub/src/http.ts": "2779f3fee310b998d9c224640789a9c85ab8fe661480981ea297742f0375f9ff",
+    "packages/hub/src/index.ts": "a3acc640e2e67a3effbc35e646e8251453dd0e172b45b9ddef42ab49c2377ac5",
+    "packages/hub/src/runtime.ts": "30b4d0424f14326993c2485e9c6d139808e4458a8be5118d3ce6e9ec4a4549b2",
+    "packages/hub/src/store.ts": "ac4caceddd9173b99e00dd6bc3a3701fb9a9dcab4a6cf30c5832a8c6c41ec82b",
+    "packages/hub/src/turns.ts": "71d3d1293ffb36c7d24ae133f58a1bd944f51cee46fbe32ae265a9c62ef4d2ff",
+    "packages/hub/tsconfig.json": "1493ff44f74b6d312a50243a0df10786d62f0d5a8c63ef72fcfb40ee24d49487",
+    "tsconfig.base.json": "19eb35472b0f254e5cbe3e632b78f65d653b6792a8b242ad8e2c5a138fcdf8ae"
+  },
+  "sourceFiles": 15,
+  "outputsCopied": false,
+  "rootRuntimeLegacyProof": "docs/execucao/provas/g8-legacy-rollback-root-round2-2026-10-08.json",
+  "qualification": "Actual historical Source code/configs, not a synthetic rewrite. Prior standalone runtime usedNode26; current supported-runtime aggregate did not complete. Future runner must compile and execute this Source underNode24."
+}

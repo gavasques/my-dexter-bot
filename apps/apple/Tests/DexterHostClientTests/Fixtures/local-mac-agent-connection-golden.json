@@ -1,0 +1,7 @@
+{
+  "schema": "dexter.local-mac-agent-connection/1",
+  "installationId": "host_synthetic",
+  "hostUrl": "https://127.0.0.1:4999",
+  "hostFingerprint": "46415c80ad2776b6213ae4a826c5bb2fc69d137d30ba942dfb0b7b9b3c8e7a27",
+  "hostCertPem": "-----BEGIN CERTIFICATE-----\nMIIBczCCARigAwIBAgIQZSpSbDdPIao25tbK1QsUnDAKBggqhkjOPQQDAjAqMSgw\nJgYDVQQDDB9kZXh0ZXItc3ludGhldGljLW1hYy1jb25uZWN0aW9uMB4XDTI2MTAx\nMzE2NTAwMFoXDTI2MTAxNDE2NTEwMFowKjEoMCYGA1UEAwwfZGV4dGVyLXN5bnRo\nZXRpYy1tYWMtY29ubmVjdGlvbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABGDn\n1Gh+NCVvIcv4ftRM7jbCUZ81/7nBTL7/doReYAGGLbbsDEAaum09qee3jakgZLLM\n5BPYpoUVIQ3peopw5X+jIDAeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgeA\nMAoGCCqGSM49BAMCA0kAMEYCIQCUspq0vBIfVXaTyMe+iUysrPro6Mw9P0EfvJqv\n8zMt7AIhAOXQ2BoVnABKJXC12kaWm6xKVyosuKNRwt3/PPEG+AdG\n-----END CERTIFICATE-----\n"
+}

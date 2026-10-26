@@ -1,0 +1,3 @@
+// swift-tools-version: 6.0
+import PackageDescription
+let package = Package(name: "DexterClientIdentity", platforms: [.macOS(.v14), .iOS(.v17)], products: [.library(name: "DexterClientIdentity", targets: ["DexterClientIdentity"])], dependencies: [.package(path: "../KeychainRuntime")], targets: [.target(name: "DexterClientIdentity", dependencies: [.product(name: "DexterKeychainRuntime", package: "KeychainRuntime")]), .testTarget(name: "DexterClientIdentityTests", dependencies: ["DexterClientIdentity", .product(name: "DexterKeychainRuntime", package: "KeychainRuntime")])], swiftLanguageModes: [.v6])

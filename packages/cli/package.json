@@ -1,0 +1,27 @@
+{
+  "name": "@dexter/cli",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "dexter": "./dist/index.js",
+    "dexter-custody": "./dist/operator-custody-bin.js",
+    "dexter-operator-host": "./dist/operator-host-bin.js"
+  },
+  "dependencies": {
+    "@dexter/agenda": "workspace:*",
+    "@dexter/contracts": "workspace:*",
+    "@dexter/engines": "workspace:*",
+    "@dexter/hub": "workspace:*",
+    "@hono/node-server": "2.1.3",
+    "@dexter/gateway": "workspace:*",
+    "@dexter/context": "workspace:*",
+    "@dexter/connectors": "workspace:*",
+    "@dexter/devices": "workspace:*",
+    "@dexter/relay-host": "workspace:*",
+    "@dexter/relay-consumer": "workspace:*",
+    "@dexter/relay": "workspace:*",
+    "@dexter/operations": "workspace:*",
+    "zod": "4.6.5"
+  }
+}

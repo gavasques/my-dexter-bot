@@ -1,0 +1,266 @@
+{
+ "generatedBy": "scripts/make-output-status-golden.mjs",
+ "current": {
+  "ownerLoopbackOnly": {
+   "version": 1,
+   "hostId": "host_44dcc0f5-16a0-43c7-a17b-e41c6b728878",
+   "revision": 1,
+   "persisted": false,
+   "current": {
+    "generation": 1,
+    "kind": "host_data_legacy",
+    "layout": "legacy",
+    "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-status-golden-plain-sMMssQ",
+    "current": true,
+    "availability": "available",
+    "namespaces": {
+     "general": false,
+     "bots": true,
+     "teams": true
+    },
+    "createdAt": null,
+    "retiredAt": null
+   },
+   "host": {
+    "platform": "darwin"
+   },
+   "scope": {
+    "botFileTools": "own_bot_namespace",
+    "teamFileTools": "team_namespace_revalidated",
+    "groupTurns": "no_file_tools",
+    "terminalCwd": "output_namespace_not_os_sandbox",
+    "engineNativeWorkspace": "internal_not_outputs",
+    "contextDocuments": "separate_custody",
+    "sharing": "not_implemented",
+    "remoteBrowsing": "owner_loopback_only",
+    "relayedBrowsing": "not_relayed"
+   },
+   "limits": {
+    "pageEntries": 200,
+    "scannedEntries": 10000,
+    "chunkBytes": 8388608,
+    "exportBytes": 2147483648,
+    "hashedBytes": 268435456,
+    "toolFileBytes": 65536,
+    "pairedChunkBytes": null
+   }
+  },
+  "pairedComposedOwner": {
+   "version": 1,
+   "hostId": "host_4a99f334-2ea2-4cf7-966c-77556a1c6d15",
+   "revision": 1,
+   "persisted": false,
+   "current": {
+    "generation": 1,
+    "kind": "host_data_legacy",
+    "layout": "legacy",
+    "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-status-golden-paired-o1Oh57/host",
+    "current": true,
+    "availability": "available",
+    "namespaces": {
+     "general": false,
+     "bots": true,
+     "teams": true
+    },
+    "createdAt": null,
+    "retiredAt": null
+   },
+   "host": {
+    "platform": "darwin"
+   },
+   "scope": {
+    "botFileTools": "own_bot_namespace",
+    "teamFileTools": "team_namespace_revalidated",
+    "groupTurns": "no_file_tools",
+    "terminalCwd": "output_namespace_not_os_sandbox",
+    "engineNativeWorkspace": "internal_not_outputs",
+    "contextDocuments": "separate_custody",
+    "sharing": "not_implemented",
+    "remoteBrowsing": "owner_loopback_and_paired_scoped",
+    "relayedBrowsing": "not_relayed"
+   },
+   "limits": {
+    "pageEntries": 200,
+    "scannedEntries": 10000,
+    "chunkBytes": 8388608,
+    "exportBytes": 2147483648,
+    "hashedBytes": 268435456,
+    "toolFileBytes": 65536,
+    "pairedChunkBytes": 262144
+   }
+  },
+  "pairedClient": {
+   "version": 1,
+   "hostId": "host_4a99f334-2ea2-4cf7-966c-77556a1c6d15",
+   "revision": 1,
+   "persisted": false,
+   "current": {
+    "generation": 1,
+    "kind": "host_data_legacy",
+    "layout": "legacy",
+    "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-status-golden-paired-o1Oh57/host",
+    "current": true,
+    "availability": "available",
+    "namespaces": {
+     "general": false,
+     "bots": true,
+     "teams": true
+    },
+    "createdAt": null,
+    "retiredAt": null
+   },
+   "host": {
+    "platform": "darwin"
+   },
+   "scope": {
+    "botFileTools": "own_bot_namespace",
+    "teamFileTools": "team_namespace_revalidated",
+    "groupTurns": "no_file_tools",
+    "terminalCwd": "output_namespace_not_os_sandbox",
+    "engineNativeWorkspace": "internal_not_outputs",
+    "contextDocuments": "separate_custody",
+    "sharing": "not_implemented",
+    "remoteBrowsing": "owner_loopback_and_paired_scoped",
+    "relayedBrowsing": "not_relayed"
+   },
+   "limits": {
+    "pageEntries": 200,
+    "scannedEntries": 10000,
+    "chunkBytes": 8388608,
+    "exportBytes": 2147483648,
+    "hashedBytes": 268435456,
+    "toolFileBytes": 65536,
+    "pairedChunkBytes": 262144
+   }
+  }
+ },
+ "legacy": {
+  "ownerLoopbackOnly": {
+   "version": 1,
+   "hostId": "host_6fbfbf01-089b-4fd0-b6db-6fe32871adfc",
+   "revision": 1,
+   "persisted": false,
+   "current": {
+    "generation": 1,
+    "kind": "host_data_legacy",
+    "layout": "legacy",
+    "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-status-golden-plain-PqNj7b",
+    "current": true,
+    "availability": "available",
+    "namespaces": {
+     "general": false,
+     "bots": true,
+     "teams": true
+    },
+    "createdAt": null,
+    "retiredAt": null
+   },
+   "host": {
+    "platform": "darwin"
+   },
+   "scope": {
+    "botFileTools": "own_bot_namespace",
+    "teamFileTools": "team_namespace_revalidated",
+    "groupTurns": "no_file_tools",
+    "terminalCwd": "output_namespace_not_os_sandbox",
+    "engineNativeWorkspace": "internal_not_outputs",
+    "contextDocuments": "separate_custody",
+    "sharing": "not_implemented",
+    "remoteBrowsing": "owner_loopback_only"
+   },
+   "limits": {
+    "pageEntries": 200,
+    "scannedEntries": 10000,
+    "chunkBytes": 8388608,
+    "exportBytes": 2147483648,
+    "hashedBytes": 268435456,
+    "toolFileBytes": 65536
+   }
+  },
+  "pairedComposedOwner": {
+   "version": 1,
+   "hostId": "host_de12a8ca-4fa3-4915-820d-2f3072a3195b",
+   "revision": 1,
+   "persisted": false,
+   "current": {
+    "generation": 1,
+    "kind": "host_data_legacy",
+    "layout": "legacy",
+    "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-status-golden-paired-4KBdi2/host",
+    "current": true,
+    "availability": "available",
+    "namespaces": {
+     "general": false,
+     "bots": true,
+     "teams": true
+    },
+    "createdAt": null,
+    "retiredAt": null
+   },
+   "host": {
+    "platform": "darwin"
+   },
+   "scope": {
+    "botFileTools": "own_bot_namespace",
+    "teamFileTools": "team_namespace_revalidated",
+    "groupTurns": "no_file_tools",
+    "terminalCwd": "output_namespace_not_os_sandbox",
+    "engineNativeWorkspace": "internal_not_outputs",
+    "contextDocuments": "separate_custody",
+    "sharing": "not_implemented",
+    "remoteBrowsing": "owner_loopback_only"
+   },
+   "limits": {
+    "pageEntries": 200,
+    "scannedEntries": 10000,
+    "chunkBytes": 8388608,
+    "exportBytes": 2147483648,
+    "hashedBytes": 268435456,
+    "toolFileBytes": 65536
+   }
+  },
+  "pairedClient": {
+   "version": 1,
+   "hostId": "host_de12a8ca-4fa3-4915-820d-2f3072a3195b",
+   "revision": 1,
+   "persisted": false,
+   "current": {
+    "generation": 1,
+    "kind": "host_data_legacy",
+    "layout": "legacy",
+    "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-status-golden-paired-4KBdi2/host",
+    "current": true,
+    "availability": "available",
+    "namespaces": {
+     "general": false,
+     "bots": true,
+     "teams": true
+    },
+    "createdAt": null,
+    "retiredAt": null
+   },
+   "host": {
+    "platform": "darwin"
+   },
+   "scope": {
+    "botFileTools": "own_bot_namespace",
+    "teamFileTools": "team_namespace_revalidated",
+    "groupTurns": "no_file_tools",
+    "terminalCwd": "output_namespace_not_os_sandbox",
+    "engineNativeWorkspace": "internal_not_outputs",
+    "contextDocuments": "separate_custody",
+    "sharing": "not_implemented",
+    "remoteBrowsing": "owner_loopback_only"
+   },
+   "limits": {
+    "pageEntries": 200,
+    "scannedEntries": 10000,
+    "chunkBytes": 8388608,
+    "exportBytes": 2147483648,
+    "hashedBytes": 268435456,
+    "toolFileBytes": 65536
+   }
+  }
+ },
+ "note": "current = POST host payloads; legacy = PRE (paired-scopes POST976) host payloads, kept to prove additive legacy decode"
+}

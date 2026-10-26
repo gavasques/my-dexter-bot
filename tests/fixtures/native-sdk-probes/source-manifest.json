@@ -1,0 +1,9 @@
+{
+  "classification": "SYNTHETIC_LOOPBACK_CURRENT_SDK_PROBES",
+  "outputsCopied": false,
+  "files": {
+    "Package.swift": "5b4e5ce52fef025ad37311d7e85296783a423922cb9143f9a8ca5ee1b7ddd3ba",
+    "Sources/GroupsSDKProbe/main.swift": "c32f9f62fd0b2792dbdc01d39c5a72377dcfaf0cd6e1adecc91f6c4283d9dd25",
+    "Sources/NativeVoiceSDKProbe/main.swift": "24ea74ff5c6c9ec1e8a4876a36e3823b6c1fee71aafe94c40f53cded91e829c3"
+  }
+}

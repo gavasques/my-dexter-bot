@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": ".test-dist", "declaration": false, "lib":["ES2024","DOM"] },
+  "include": ["tests/**/*.ts", "packages/cli/src/mcp-stdio.ts"],
+  "exclude": ["tests/fixtures/historical/**"]
+}

@@ -1,0 +1,145 @@
+{
+  "health": {
+    "protocolVersion": 1,
+    "mode": "local-development",
+    "hostId": "host_local_01",
+    "engineRouting": "connected",
+    "remotePairing": "not_implemented",
+    "state": {
+      "hostId": "host_local_01",
+      "ownerId": "owner_01",
+      "schemaVersion": 2,
+      "lease": { "hostname": "mac-local", "pid": 1234, "acquiredAt": 1791331200000 },
+      "counts": {
+        "bots": 1, "threads": 1, "messages": 2, "events": 4, "grants": 0,
+        "devices": { "online": 0, "stale": 0, "revoked": 0 },
+        "actions": { "awaiting_approval": 1, "ready": 0, "running": 0, "succeeded": 0, "denied": 0, "blocked": 0, "unknown": 0 }
+      }
+    },
+    "runtime": null
+  },
+  "bot": {
+    "id": "bot_local_01",
+    "name": "Research assistant",
+    "profileId": "owner_01",
+    "engine": "claude",
+    "ownerId": "owner_01",
+    "createdAt": 1791331200000
+  },
+  "thread": { "id": "thread_local_01", "botId": "bot_local_01", "createdAt": 1791331200000 },
+  "message": {
+    "cursor": 7,
+    "id": "message_local_01",
+    "threadId": "thread_local_01",
+    "clientMessageId": "message_client_01",
+    "role": "assistant",
+    "content": "Ready.",
+    "createdAt": 1791331200000
+  },
+  "turn": {
+    "cursor": 9,
+    "id": "turn_local_01",
+    "threadId": "thread_local_01",
+    "botId": "bot_local_01",
+    "engine": "claude",
+    "clientRequestId": "request_client_01",
+    "inputMessageId": "message_local_02",
+    "outputMessageId": null,
+    "state": "running",
+    "code": null,
+    "outputChars": 6,
+    "outputTruncated": false,
+    "createdAt": 1791331200000,
+    "startedAt": 1791331200001,
+    "finishedAt": null,
+    "updatedAt": 1791331200002
+  },
+  "action": {
+    "id": "action_local_01",
+    "request": {
+      "botId": "bot_local_01",
+      "threadId": "thread_local_01",
+      "tool": "browser.open",
+      "destination": "local-browser",
+      "arguments": { "url": "https://example.invalid", "visible": true },
+      "idempotencyKey": "action_key_01"
+    },
+    "requestHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "grantRevision": 3,
+    "state": "awaiting_approval",
+    "createdAt": 1791331200000,
+    "updatedAt": 1791331200000,
+    "approvalExpiresAt": 4102444800000,
+    "decidedBy": null,
+    "result": null,
+    "reason": null
+  },
+  "devices": {
+    "items": [
+      {
+        "id": "device_mac_local_01",
+        "ownerId": "owner_01",
+        "name": "Mac de desenvolvimento",
+        "platform": "macos",
+        "capabilities": ["browser.open", "files.read"],
+        "lastSeenAt": 1791331200000,
+        "revokedAt": null,
+        "presence": "online",
+        "paired": true
+      },
+      {
+        "id": "device_ios_unpaired_01",
+        "ownerId": "owner_01",
+        "name": "iPhone registrado",
+        "platform": "ios",
+        "capabilities": [],
+        "lastSeenAt": 1791331190000,
+        "revokedAt": null,
+        "presence": "stale",
+        "paired": false
+      },
+      {
+        "id": "device_mac_revoked_01",
+        "ownerId": "owner_01",
+        "name": "Mac antigo",
+        "platform": "macos",
+        "capabilities": ["browser.open"],
+        "lastSeenAt": 1791331100000,
+        "revokedAt": 1791331195000,
+        "presence": "revoked",
+        "paired": false
+      }
+    ]
+  },
+  "hostEvents": {
+    "items": [
+      { "cursor": 41, "id": "event_thread_01", "kind": "thread.created", "botId": "bot_local_01", "threadId": "thread_local_01", "entityId": "thread_local_01", "createdAt": 1791331200000 }
+    ],
+    "nextCursor": 41
+  },
+  "deviceRenamedEvent": {
+    "cursor": 42,
+    "id": "event_device_renamed_01",
+    "kind": "device.renamed",
+    "botId": null,
+    "threadId": null,
+    "entityId": "device_mac_local_01",
+    "createdAt": 1791331200001
+  },
+  "turnEvents": {
+    "items": [
+      { "cursor": 103, "turnId": "turn_local_01", "threadId": "thread_local_01", "kind": "text.delta", "text": "Hello ", "data": null, "createdAt": 1791331200002 }
+    ],
+    "nextCursor": 103
+  },
+  "doctorReady": {
+    "status": "initialized",
+    "dataDir": ".dexter",
+    "node": "v24.0.0",
+    "protocolVersion": 1,
+    "schema": 2,
+    "counts": { "bots": 1, "threads": 1, "messages": 2 },
+    "engineInference": "not_verified",
+    "remotePairing": "not_implemented"
+  }
+}

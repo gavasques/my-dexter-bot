@@ -1,0 +1,17 @@
+{
+  "name": "@dexter/relay-host",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@dexter/relay": "workspace:*",
+    "@dexter/relay-consumer": "workspace:*",
+    "@dexter/devices": "workspace:*"
+  }
+}

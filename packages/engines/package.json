@@ -1,0 +1,5 @@
+{
+  "name": "@dexter/engines", "version": "0.0.1", "private": true, "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "dependencies": { "@dexter/contracts": "workspace:*" }
+}

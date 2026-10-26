@@ -1,0 +1,581 @@
+{
+ "generatedBy": "scripts/make-connections-golden.mjs",
+ "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+ "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+ "calls": {
+  "status": {
+   "method": "GET",
+   "path": "/v1/connections/status",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "platform": "available",
+    "managedProviders": [
+     "composio"
+    ],
+    "direct": "unconfigured",
+    "nativeOAuthPersistence": "unconfigured",
+    "openAuthorizations": 0
+   }
+  },
+  "catalog": {
+   "method": "GET",
+   "path": "/v1/connections/catalog",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "platform": "available",
+    "revision": 1,
+    "pin": "a54c4a7479373a3cfdb6fd31f3eaf4110774665bcb954bf460cf80515c638367",
+    "fetchedAt": 1791864187185,
+    "freshness": "fresh",
+    "services": [
+     {
+      "serviceId": "gmail",
+      "displayName": "Gmail",
+      "description": "E-mail do Google.",
+      "route": {
+       "kind": "managed",
+       "provider": "composio"
+      },
+      "authorization": "oauth_link",
+      "identity": "provider_verified",
+      "verification": "unproven",
+      "tools": [
+       {
+        "name": "gmail.read",
+        "description": "Ler e-mails recentes",
+        "effect": "read"
+       },
+       {
+        "name": "gmail.send",
+        "description": "Enviar e-mail",
+        "effect": "write"
+       }
+      ],
+      "availability": {
+       "state": "available",
+       "reason": null
+      }
+     }
+    ]
+   }
+  },
+  "start": {
+   "method": "POST",
+   "path": "/v1/connections/authorizations",
+   "status": 201,
+   "request": {
+    "expectedHostID": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-start-1",
+    "serviceId": "gmail",
+    "catalogPin": "a54c4a7479373a3cfdb6fd31f3eaf4110774665bcb954bf460cf80515c638367",
+    "profileId": null,
+    "label": "Trabalho é 🚀",
+    "replacesAccountId": null
+   },
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "auth_56c67934-df5c-4948-9272-56c162b5150c",
+    "clientRequestId": "golden-start-1",
+    "requestHash": "88caae269b952ef9899a77bfa2c76f2da262a1caf137cd90330c56a488eb533f",
+    "serviceId": "gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "catalogRevision": 1,
+    "catalogPin": "a54c4a7479373a3cfdb6fd31f3eaf4110774665bcb954bf460cf80515c638367",
+    "profileId": "default",
+    "state": "awaiting_user",
+    "reason": null,
+    "authorizationURL": "https://connect.composio.test/link/lk_27550995f3c36d3ef4cb8f51",
+    "linkAvailable": true,
+    "expiresAt": 1791864787202,
+    "callback": "none",
+    "accountId": null,
+    "replacesAccountId": null,
+    "createdAt": 1791864187195,
+    "updatedAt": 1791864187205
+   }
+  },
+  "callback": {
+   "method": "POST",
+   "path": "/v1/connections/authorizations/golden-start-1/callback",
+   "status": 200,
+   "request": {
+    "expectedHostID": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "outcome": "returned",
+    "providerAccountRef": null
+   },
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "auth_56c67934-df5c-4948-9272-56c162b5150c",
+    "clientRequestId": "golden-start-1",
+    "requestHash": "88caae269b952ef9899a77bfa2c76f2da262a1caf137cd90330c56a488eb533f",
+    "serviceId": "gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "catalogRevision": 1,
+    "catalogPin": "a54c4a7479373a3cfdb6fd31f3eaf4110774665bcb954bf460cf80515c638367",
+    "profileId": "default",
+    "state": "verifying",
+    "reason": null,
+    "authorizationURL": null,
+    "linkAvailable": false,
+    "expiresAt": 1791864787202,
+    "callback": "returned",
+    "accountId": null,
+    "replacesAccountId": null,
+    "createdAt": 1791864187195,
+    "updatedAt": 1791864187209
+   }
+  },
+  "authorization": {
+   "method": "GET",
+   "path": "/v1/connections/authorizations/golden-start-1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "auth_56c67934-df5c-4948-9272-56c162b5150c",
+    "clientRequestId": "golden-start-1",
+    "requestHash": "88caae269b952ef9899a77bfa2c76f2da262a1caf137cd90330c56a488eb533f",
+    "serviceId": "gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "catalogRevision": 1,
+    "catalogPin": "a54c4a7479373a3cfdb6fd31f3eaf4110774665bcb954bf460cf80515c638367",
+    "profileId": "default",
+    "state": "connected",
+    "reason": null,
+    "authorizationURL": null,
+    "linkAvailable": false,
+    "expiresAt": 1791864787202,
+    "callback": "returned",
+    "accountId": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "replacesAccountId": null,
+    "createdAt": 1791864187195,
+    "updatedAt": 1791864187230
+   }
+  },
+  "account": {
+   "method": "GET",
+   "path": "/v1/connections/accounts/acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "serviceId": "gmail",
+    "displayName": "Gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "label": "Trabalho é 🚀",
+    "identity": {
+     "confirmation": "provider_verified",
+     "value": "ana.sintetica@example.invalid",
+     "kind": "email",
+     "source": "identity_endpoint",
+     "issuer": null,
+     "checkedAt": 1791864187244
+    },
+    "status": "connected",
+    "statusCheckedAt": 1791864187244,
+    "persistence": "managed_service",
+    "manage": "connections",
+    "nativeServerId": null,
+    "revision": 1,
+    "profileId": "default",
+    "tools": [
+     {
+      "name": "gmail.read",
+      "effect": "read"
+     },
+     {
+      "name": "gmail.send",
+      "effect": "write"
+     }
+    ],
+    "bots": [
+     {
+      "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+      "access": "disabled"
+     }
+    ],
+    "previousAccountId": null,
+    "gatewayConnectionIds": [
+     "conn_9e52228e-fee5-49c2-91c5-894665322950"
+    ],
+    "identityChanged": null,
+    "disconnect": null,
+    "createdAt": 1791864187230,
+    "updatedAt": 1791864187244
+   }
+  },
+  "access": {
+   "method": "PATCH",
+   "path": "/v1/connections/accounts/acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1/access",
+   "status": 200,
+   "request": {
+    "expectedHostID": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-access-1",
+    "expectedRevision": 1,
+    "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+    "enabled": true
+   },
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-access-1",
+    "kind": "access",
+    "accountId": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "requestHash": "d45cdb990c706319929a1aadc0ae3726a1c97b1c599fc0a1c9e7861dc025b6b0",
+    "previousRevision": 1,
+    "revision": 2,
+    "access": {
+     "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+     "enabled": true,
+     "tools": 2
+    },
+    "disconnect": null,
+    "label": null,
+    "createdAt": 1791864187252
+   }
+  },
+  "accounts": {
+   "method": "GET",
+   "path": "/v1/connections/accounts",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "items": [
+     {
+      "version": 1,
+      "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+      "id": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+      "serviceId": "gmail",
+      "displayName": "Gmail",
+      "route": {
+       "kind": "managed",
+       "provider": "composio"
+      },
+      "label": "Trabalho é 🚀",
+      "identity": {
+       "confirmation": "provider_verified",
+       "value": "ana.sintetica@example.invalid",
+       "kind": "email",
+       "source": "identity_endpoint",
+       "issuer": null,
+       "checkedAt": 1791864187244
+      },
+      "status": "connected",
+      "statusCheckedAt": 1791864187244,
+      "persistence": "managed_service",
+      "manage": "connections",
+      "nativeServerId": null,
+      "revision": 2,
+      "profileId": "default",
+      "tools": [
+       {
+        "name": "gmail.read",
+        "effect": "read"
+       },
+       {
+        "name": "gmail.send",
+        "effect": "write"
+       }
+      ],
+      "bots": [
+       {
+        "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+        "access": "enabled"
+       }
+      ],
+      "previousAccountId": null,
+      "gatewayConnectionIds": [
+       "conn_9e52228e-fee5-49c2-91c5-894665322950"
+      ],
+      "identityChanged": null,
+      "disconnect": null,
+      "createdAt": 1791864187230,
+      "updatedAt": 1791864187252
+     }
+    ]
+   }
+  },
+  "accountAfterAccess": {
+   "method": "GET",
+   "path": "/v1/connections/accounts/acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "serviceId": "gmail",
+    "displayName": "Gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "label": "Trabalho é 🚀",
+    "identity": {
+     "confirmation": "provider_verified",
+     "value": "ana.sintetica@example.invalid",
+     "kind": "email",
+     "source": "identity_endpoint",
+     "issuer": null,
+     "checkedAt": 1791864187266
+    },
+    "status": "connected",
+    "statusCheckedAt": 1791864187266,
+    "persistence": "managed_service",
+    "manage": "connections",
+    "nativeServerId": null,
+    "revision": 2,
+    "profileId": "default",
+    "tools": [
+     {
+      "name": "gmail.read",
+      "effect": "read"
+     },
+     {
+      "name": "gmail.send",
+      "effect": "write"
+     }
+    ],
+    "bots": [
+     {
+      "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+      "access": "enabled"
+     }
+    ],
+    "previousAccountId": null,
+    "gatewayConnectionIds": [
+     "conn_9e52228e-fee5-49c2-91c5-894665322950"
+    ],
+    "identityChanged": null,
+    "disconnect": null,
+    "createdAt": 1791864187230,
+    "updatedAt": 1791864187266
+   }
+  },
+  "label": {
+   "method": "PATCH",
+   "path": "/v1/connections/accounts/acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1/label",
+   "status": 200,
+   "request": {
+    "expectedHostID": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-label-1",
+    "expectedRevision": 2,
+    "label": "Pessoal ✉️"
+   },
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-label-1",
+    "kind": "label",
+    "accountId": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "requestHash": "e3a21035e1c13f339a2c739e05fab69a00acf06f98bd0ad5cf17ee5d85e20e77",
+    "previousRevision": 2,
+    "revision": 3,
+    "access": null,
+    "disconnect": null,
+    "label": "Pessoal ✉️",
+    "createdAt": 1791864187271
+   }
+  },
+  "accountAfterLabel": {
+   "method": "GET",
+   "path": "/v1/connections/accounts/acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "serviceId": "gmail",
+    "displayName": "Gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "label": "Pessoal ✉️",
+    "identity": {
+     "confirmation": "provider_verified",
+     "value": "ana.sintetica@example.invalid",
+     "kind": "email",
+     "source": "identity_endpoint",
+     "issuer": null,
+     "checkedAt": 1791864187280
+    },
+    "status": "connected",
+    "statusCheckedAt": 1791864187280,
+    "persistence": "managed_service",
+    "manage": "connections",
+    "nativeServerId": null,
+    "revision": 3,
+    "profileId": "default",
+    "tools": [
+     {
+      "name": "gmail.read",
+      "effect": "read"
+     },
+     {
+      "name": "gmail.send",
+      "effect": "write"
+     }
+    ],
+    "bots": [
+     {
+      "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+      "access": "enabled"
+     }
+    ],
+    "previousAccountId": null,
+    "gatewayConnectionIds": [
+     "conn_9e52228e-fee5-49c2-91c5-894665322950"
+    ],
+    "identityChanged": null,
+    "disconnect": null,
+    "createdAt": 1791864187230,
+    "updatedAt": 1791864187280
+   }
+  },
+  "disconnect": {
+   "method": "POST",
+   "path": "/v1/connections/accounts/acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1/disconnect",
+   "status": 200,
+   "request": {
+    "expectedHostID": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-disconnect-1",
+    "expectedRevision": 3
+   },
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-disconnect-1",
+    "kind": "disconnect",
+    "accountId": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "requestHash": "bcc011e43cd3c859430b1b4c079bec3f2f8313ed91b3c5cb59350be7915e65f4",
+    "previousRevision": 3,
+    "revision": 4,
+    "access": null,
+    "disconnect": {
+     "upstream": "deleted",
+     "revocation": "requested"
+    },
+    "label": null,
+    "createdAt": 1791864187291
+   }
+  },
+  "receipt": {
+   "method": "GET",
+   "path": "/v1/connections/receipts/golden-access-1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-access-1",
+    "kind": "access",
+    "accountId": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "requestHash": "d45cdb990c706319929a1aadc0ae3726a1c97b1c599fc0a1c9e7861dc025b6b0",
+    "previousRevision": 1,
+    "revision": 2,
+    "access": {
+     "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+     "enabled": true,
+     "tools": 2
+    },
+    "disconnect": null,
+    "label": null,
+    "createdAt": 1791864187252
+   }
+  },
+  "labelReceipt": {
+   "method": "GET",
+   "path": "/v1/connections/receipts/golden-label-1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "clientRequestId": "golden-label-1",
+    "kind": "label",
+    "accountId": "acct_8647f78d-fdfb-4511-a0b7-4a5df7dd61a1",
+    "requestHash": "e3a21035e1c13f339a2c739e05fab69a00acf06f98bd0ad5cf17ee5d85e20e77",
+    "previousRevision": 2,
+    "revision": 3,
+    "access": null,
+    "disconnect": null,
+    "label": "Pessoal ✉️",
+    "createdAt": 1791864187271
+   }
+  },
+  "accountMismatch": {
+   "method": "GET",
+   "path": "/v1/connections/accounts/acct_4a2916d8-cb1c-4463-95e6-dcfb22cdcf77",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_5ec89c30-94fd-4e40-81c3-87554871aa42",
+    "id": "acct_4a2916d8-cb1c-4463-95e6-dcfb22cdcf77",
+    "serviceId": "gmail",
+    "displayName": "Gmail",
+    "route": {
+     "kind": "managed",
+     "provider": "composio"
+    },
+    "label": "Gmail",
+    "identity": {
+     "confirmation": "provider_verified",
+     "value": "bia.sintetica@example.invalid",
+     "kind": "email",
+     "source": "identity_endpoint",
+     "issuer": null,
+     "checkedAt": 1791864187323
+    },
+    "status": "identity_mismatch",
+    "statusCheckedAt": 1791864187331,
+    "persistence": "managed_service",
+    "manage": "connections",
+    "nativeServerId": null,
+    "revision": 2,
+    "profileId": "default",
+    "tools": [
+     {
+      "name": "gmail.read",
+      "effect": "read"
+     },
+     {
+      "name": "gmail.send",
+      "effect": "write"
+     }
+    ],
+    "bots": [
+     {
+      "botId": "bot_26e01326-1bef-47d2-9c3d-7536586ff485",
+      "access": "disabled"
+     }
+    ],
+    "previousAccountId": null,
+    "gatewayConnectionIds": [
+     "conn_5f2854c3-c459-49a2-be66-51e70e19d50a"
+    ],
+    "identityChanged": null,
+    "disconnect": null,
+    "createdAt": 1791864187314,
+    "updatedAt": 1791864187331
+   }
+  }
+ }
+}

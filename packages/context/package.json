@@ -1,0 +1,19 @@
+{
+  "name": "@dexter/context",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@dexter/hub": "workspace:*",
+    "@dexter/gateway": "workspace:*",
+    "@dexter/contracts": "workspace:*",
+    "@dexter/engines": "workspace:*",
+    "zod": "4.6.5"
+  }
+}

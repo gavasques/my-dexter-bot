@@ -1,0 +1,38 @@
+name: Portable checks
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.0.9
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.14.0
+          cache: pnpm
+
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build and strict typecheck
+        run: pnpm typecheck
+
+      - name: Progressive operational guide tests
+        run: node --test tests/mcp-memory-progressive-docs-r2.test.mjs tests/harness-settings-functional.test.mjs
+
+      - name: Check local Markdown links
+        run: node scripts/check-markdown-links.mjs

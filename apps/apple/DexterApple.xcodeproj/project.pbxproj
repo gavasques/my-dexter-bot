@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+        C61200000000000000000005 /* PairingInvitationQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61200000000000000000006 /* PairingInvitationQRCode.swift */; };
+        C61200000000000000000003 /* PairingQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61200000000000000000004 /* PairingQRScanner.swift */; };
+        C61200000000000000000001 /* IOSMacConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61200000000000000000002 /* IOSMacConnectionView.swift */; };
+        A55100000000000000000001 /* AssistantSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55100000000000000000002 /* AssistantSetupView.swift */; };
+        6664BF628136A08E6A3C9186 /* NativeVoiceCallControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67193AB1FF52C434C891D101 /* NativeVoiceCallControls.swift */; };
+        092B76BE0744140386E519FE /* MemoryLearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E961040D1109C2984594A22 /* MemoryLearningView.swift */; };
+        C3C2D71CC32BE64044688C1A /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B4E4B97020DDC0AEC944A /* GroupsView.swift */; };
+        71D54FE130C430E6C3700C5E /* GroupEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974DFCC953C0BFED1259AAB /* GroupEditorView.swift */; };
+        69949C09C25117ED71AA368A /* GroupConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888013EB33E75679ED0BDF2B /* GroupConversationView.swift */; };
+        A6D96C4F64C4F315ED987B2E /* ComposerSettingsControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4E6EC509A64CCB623F492 /* ComposerSettingsControls.swift */; };
+        E3C907864CDACB4B896B51E0 /* ChatAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7CFC7D85623C6D779F93F /* ChatAppearance.swift */; };
+        DCE7A0132026101200000001 /* MemoryBackendSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7A0132026101200000002 /* MemoryBackendSettingsView.swift */; };
+        DCE7A0122026101200000001 /* DeviceConversationRoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7A0122026101200000002 /* DeviceConversationRoutesView.swift */; };
+        99B900000000000000000001 /* MacSelectableChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B900000000000000000002 /* MacSelectableChatMessage.swift */; };
+        99B800000000000000000001 /* AvatarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B800000000000000000002 /* AvatarViews.swift */; };
+        99B700000000000000000001 /* BotSettingsResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B700000000000000000002 /* BotSettingsResourcesView.swift */; };
+        99B600000000000000000001 /* AutomationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B600000000000000000002 /* AutomationsView.swift */; };
+        99B500000000000000000001 /* BrowserUseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B500000000000000000002 /* BrowserUseViews.swift */; };
+        99C000000000000000000001 /* OnboardingWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C000000000000000000002 /* OnboardingWelcomeView.swift */; };
+        99C0F1000000000000000003 /* ManagedConnectAppsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0F1000000000000000004 /* ManagedConnectAppsViews.swift */; };
+        99C0F1000000000000000005 /* ManagedConnectAppsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0F1000000000000000004 /* ManagedConnectAppsViews.swift */; };
+        99C0F1000000000000000001 /* OutputFilesViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0F1000000000000000002 /* OutputFilesViews.swift */; };
+        99C000000000000000000007 /* NewBotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C000000000000000000008 /* NewBotView.swift */; };
+        99C000000000000000000005 /* VoiceEntryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C000000000000000000006 /* VoiceEntryButton.swift */; };
+        99C000000000000000000003 /* ConnectOtherBaseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C000000000000000000004 /* ConnectOtherBaseSheet.swift */; };
+        99C0F2000000000000000001 /* OwnerPairingOfferViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0F2000000000000000002 /* OwnerPairingOfferViews.swift */; };
+        99C0F3000000000000000001 /* OwnerPairingClaimsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0F3000000000000000002 /* OwnerPairingClaimsViews.swift */; };
+        99C0F4000000000000000001 /* ConnectionsPlatformSetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0F4000000000000000002 /* ConnectionsPlatformSetupViews.swift */; };
+        A7EA00000000000000000001 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EA00000000000000000002 /* TeamsView.swift */; };
+        99B400000000000000000001 /* LiveVoiceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B400000000000000000002 /* LiveVoiceViews.swift */; };
+        99B300000000000000000001 /* MacChatComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B300000000000000000002 /* MacChatComposer.swift */; };
+        99B200000000000000000001 /* MacBotInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B200000000000000000002 /* MacBotInspectorView.swift */; };
+        99B100000000000000000001 /* BotDocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B100000000000000000002 /* BotDocumentsView.swift */; };
+        99B000000000000000000001 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B000000000000000000002 /* SkillsView.swift */; };
+        99AF00000000000000000001 /* BotDelegationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF00000000000000000002 /* BotDelegationsView.swift */; };
+        99AE00000000000000000001 /* BotProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE00000000000000000002 /* BotProfileView.swift */; };
+        99AD00000000000000000001 /* MacSelectedFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AD00000000000000000003 /* MacSelectedFilesView.swift */; };
+        99AD00000000000000000002 /* MacCuaConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AD00000000000000000004 /* MacCuaConfigurationView.swift */; };
+        DCE7A0142026101400000001 /* MacScreenControlSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7A0142026101400000002 /* MacScreenControlSheet.swift */; };
+        99AC00000000000000000001 /* DexterAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 99AC00000000000000000002 /* DexterAppIcon.icns */; };
+        99AB00000000000000000001 /* McpConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB00000000000000000003 /* McpConnectionsView.swift */; };
+        99AB00000000000000000002 /* McpConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB00000000000000000003 /* McpConnectionsView.swift */; };
+        99AA00000000000000000001 /* MacAgentSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AA00000000000000000003 /* MacAgentSettingsView.swift */; };
+        99AA00000000000000000002 /* MacAgentSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AA00000000000000000003 /* MacAgentSettingsView.swift */; };
+		200A0DEAFB70F135C62A37FD /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16EB7BCAD37934325EE25F4 /* DevicesView.swift */; };
+		20D2588DD2159BE09740A0FE /* DexterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BC79818407C4AC9F38940 /* DexterApp.swift */; };
+		20FAD043B9F05F5B35759536 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83B153DCB0BCE0BCB60D5D /* SettingsView.swift */; };
+		272AA08911BA0FAD389F3FF3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92ECAB8B869338A5C0B476A /* ChatView.swift */; };
+		27AED2FAB39FFE82AE691CD5 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16EB7BCAD37934325EE25F4 /* DevicesView.swift */; };
+		2D5ED2E92BC7031776C72F1F /* View+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1ECB344AF6F9CF85CC88F /* View+ErrorAlert.swift */; };
+		3E57FF56BAAE27781B200F42 /* DexterHostClient in Frameworks */ = {isa = PBXBuildFile; productRef = 12DC8CEA13505EB486BE19D3 /* DexterHostClient */; };
+		4E73BF38AFFDDAB1AEEC16A0 /* DexterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BC79818407C4AC9F38940 /* DexterApp.swift */; };
+		4F87D5586FCB2631D1D2EAD9 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92ECAB8B869338A5C0B476A /* ChatView.swift */; };
+		51F77A4B2CE9C00FE3FA5B28 /* DexterAppCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8A2FD9286B1AF5B940D1E575 /* DexterAppCore */; };
+		70F5E85967908E0115D29794 /* DexterAppCore in Frameworks */ = {isa = PBXBuildFile; productRef = 67519D910B0BFBA277C8B171 /* DexterAppCore */; };
+		962E9E9570172DD6134AD84D /* DexterHostClient in Frameworks */ = {isa = PBXBuildFile; productRef = 9E9A35B2580C6E579E63CE55 /* DexterHostClient */; };
+		9CF10A4F05025CD0E12361F3 /* DexterRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EE6AE64525A4CC383B9758 /* DexterRootView.swift */; };
+		B5D623C2AD24DF9F76DC2B3E /* View+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B1ECB344AF6F9CF85CC88F /* View+ErrorAlert.swift */; };
+		C8DFA3C3CA7738A5DB002D4B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83B153DCB0BCE0BCB60D5D /* SettingsView.swift */; };
+		E4E0830D54A844EC57FCD5B7 /* DexterRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EE6AE64525A4CC383B9758 /* DexterRootView.swift */; };
+		A77A00000000000000000003 /* NativeActionSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A00000000000000000001 /* NativeActionSceneRouter.swift */; };
+		A77A00000000000000000004 /* IOSNativeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A00000000000000000002 /* IOSNativeActions.swift */; };
+		A77A00000000000000000007 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A77A00000000000000000005 /* Localizable.xcstrings */; };
+		A77A00000000000000000008 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A77A00000000000000000006 /* AppShortcuts.xcstrings */; };
+		A77A0000000000000000000E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A77A00000000000000000005 /* Localizable.xcstrings */; };
+		A77A0000000000000000000D /* DexterNativeActions in Frameworks */ = {isa = PBXBuildFile; productRef = A77A0000000000000000000C /* DexterNativeActions */; };
+		406BE03BE16548C980A346FC /* DexterIOSCapabilities in Frameworks */ = {isa = PBXBuildFile; productRef = B026960DE676433599137A8B /* DexterIOSCapabilities */; };
+		48A7787F0D7A474DB451312B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66681CE8F0D9466E8A3CAA315C198D1C /* InfoPlist.strings */; };
+		8F7C70000000000000000001 /* InfoPlist.strings in Mac Resources */ = {isa = PBXBuildFile; fileRef = 8F8C80000000000000000003 /* InfoPlist.strings */; };
+        19E486979C38D6EB98A4C34D /* ConversationHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D475FEA04A82CC2E15B367 /* ConversationHistoryList.swift */; };
+        E00D74A09C6ABD6314F21E50 /* ConversationHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D475FEA04A82CC2E15B367 /* ConversationHistoryList.swift */; };
+		5C011A000000000000000001 /* ChatTranscriptScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C011A000000000000000002 /* ChatTranscriptScrolling.swift */; };
+		5C011A000000000000000003 /* ChatTranscriptScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C011A000000000000000002 /* ChatTranscriptScrolling.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        C61200000000000000000006 /* PairingInvitationQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingInvitationQRCode.swift; sourceTree = "<group>"; };
+        C61200000000000000000004 /* PairingQRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingQRScanner.swift; sourceTree = "<group>"; };
+        C61200000000000000000002 /* IOSMacConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSMacConnectionView.swift; sourceTree = "<group>"; };
+        A55100000000000000000002 /* AssistantSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantSetupView.swift; sourceTree = "<group>"; };
+        67193AB1FF52C434C891D101 /* NativeVoiceCallControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeVoiceCallControls.swift; sourceTree = "<group>"; };
+        6E961040D1109C2984594A22 /* MemoryLearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLearningView.swift; sourceTree = "<group>"; };
+        E22B4E4B97020DDC0AEC944A /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+        4974DFCC953C0BFED1259AAB /* GroupEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEditorView.swift; sourceTree = "<group>"; };
+        888013EB33E75679ED0BDF2B /* GroupConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupConversationView.swift; sourceTree = "<group>"; };
+        C2F4E6EC509A64CCB623F492 /* ComposerSettingsControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerSettingsControls.swift; sourceTree = "<group>"; };
+        5FD7CFC7D85623C6D779F93F /* ChatAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppearance.swift; sourceTree = "<group>"; };
+        DCE7A0132026101200000002 /* MemoryBackendSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryBackendSettingsView.swift; sourceTree = "<group>"; };
+        DCE7A0122026101200000002 /* DeviceConversationRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConversationRoutesView.swift; sourceTree = "<group>"; };
+        99B900000000000000000002 /* MacSelectableChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSelectableChatMessage.swift; sourceTree = "<group>"; };
+        99B800000000000000000002 /* AvatarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViews.swift; sourceTree = "<group>"; };
+        99B700000000000000000002 /* BotSettingsResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotSettingsResourcesView.swift; sourceTree = "<group>"; };
+        99B600000000000000000002 /* AutomationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationsView.swift; sourceTree = "<group>"; };
+        99B500000000000000000002 /* BrowserUseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserUseViews.swift; sourceTree = "<group>"; };
+        99C000000000000000000002 /* OnboardingWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWelcomeView.swift; sourceTree = "<group>"; };
+        99C0F1000000000000000004 /* ManagedConnectAppsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedConnectAppsViews.swift; sourceTree = "<group>"; };
+        99C0F1000000000000000002 /* OutputFilesViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFilesViews.swift; sourceTree = "<group>"; };
+        99C000000000000000000008 /* NewBotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBotView.swift; sourceTree = "<group>"; };
+        99C000000000000000000006 /* VoiceEntryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceEntryButton.swift; sourceTree = "<group>"; };
+        99C000000000000000000004 /* ConnectOtherBaseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectOtherBaseSheet.swift; sourceTree = "<group>"; };
+        99C0F2000000000000000002 /* OwnerPairingOfferViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerPairingOfferViews.swift; sourceTree = "<group>"; };
+        99C0F3000000000000000002 /* OwnerPairingClaimsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerPairingClaimsViews.swift; sourceTree = "<group>"; };
+        99C0F4000000000000000002 /* ConnectionsPlatformSetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsPlatformSetupViews.swift; sourceTree = "<group>"; };
+        A7EA00000000000000000002 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+        99B400000000000000000002 /* LiveVoiceViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVoiceViews.swift; sourceTree = "<group>"; };
+        99B300000000000000000002 /* MacChatComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacChatComposer.swift; sourceTree = "<group>"; };
+        99B200000000000000000002 /* MacBotInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBotInspectorView.swift; sourceTree = "<group>"; };
+        99B100000000000000000002 /* BotDocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotDocumentsView.swift; sourceTree = "<group>"; };
+        99B000000000000000000002 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+        99AF00000000000000000002 /* BotDelegationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotDelegationsView.swift; sourceTree = "<group>"; };
+        99AE00000000000000000002 /* BotProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotProfileView.swift; sourceTree = "<group>"; };
+        99AD00000000000000000003 /* MacSelectedFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSelectedFilesView.swift; sourceTree = "<group>"; };
+        99AD00000000000000000004 /* MacCuaConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCuaConfigurationView.swift; sourceTree = "<group>"; };
+        DCE7A0142026101400000002 /* MacScreenControlSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacScreenControlSheet.swift; sourceTree = "<group>"; };
+        99AC00000000000000000002 /* DexterAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DexterAppIcon.icns; sourceTree = "<group>"; };
+        99AB00000000000000000003 /* McpConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McpConnectionsView.swift; sourceTree = "<group>"; };
+        99AA00000000000000000003 /* MacAgentSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAgentSettingsView.swift; sourceTree = "<group>"; };
+		03A1B301357EBDB1326E81D0 /* DexterIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DexterIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23057759A02EC45C914168BE /* DexterMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DexterMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B1ECB344AF6F9CF85CC88F /* View+ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ErrorAlert.swift"; sourceTree = "<group>"; };
+		6F83B153DCB0BCE0BCB60D5D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		725BC79818407C4AC9F38940 /* DexterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexterApp.swift; sourceTree = "<group>"; };
+		87EE6AE64525A4CC383B9758 /* DexterRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexterRootView.swift; sourceTree = "<group>"; };
+		A16EB7BCAD37934325EE25F4 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		A495FA962A279B8BAD7934EA /* apple */ = {isa = PBXFileReference; lastKnownFileType = folder; name = apple; path = .; sourceTree = SOURCE_ROOT; };
+		D92ECAB8B869338A5C0B476A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A77A00000000000000000001 /* NativeActionSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeActionSceneRouter.swift; sourceTree = "<group>"; };
+		A77A00000000000000000002 /* IOSNativeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSNativeActions.swift; sourceTree = "<group>"; };
+		A77A00000000000000000005 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A77A00000000000000000006 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		7E2F3CAC5435409D922B18F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD98320787B546D882FDDA8C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8F8C80000000000000000001 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F8C80000000000000000002 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+        F2D475FEA04A82CC2E15B367 /* ConversationHistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationHistoryList.swift; sourceTree = "<group>"; };
+		5C011A000000000000000002 /* ChatTranscriptScrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTranscriptScrolling.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXVariantGroup section */
+		66681CE8F0D9466E8A3CAA315C198D1C /* InfoPlist.strings */ = {isa = PBXVariantGroup; children = (7E2F3CAC5435409D922B18F5 /* en */, CD98320787B546D882FDDA8C /* pt-BR */,); name = InfoPlist.strings; sourceTree = "<group>"; };
+		8F8C80000000000000000003 /* InfoPlist.strings */ = {isa = PBXVariantGroup; children = (8F8C80000000000000000001 /* en */, 8F8C80000000000000000002 /* pt-BR */,); name = InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXVariantGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17877102A449B80D2AA7B252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E57FF56BAAE27781B200F42 /* DexterHostClient in Frameworks */,
+				70F5E85967908E0115D29794 /* DexterAppCore in Frameworks */,
+				A77A0000000000000000000D /* DexterNativeActions in Frameworks */,
+				406BE03BE16548C980A346FC /* DexterIOSCapabilities in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248E9F66B4FB0A41F331C3D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962E9E9570172DD6134AD84D /* DexterHostClient in Frameworks */,
+				51F77A4B2CE9C00FE3FA5B28 /* DexterAppCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6231E535C53E3493A92B67D7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+                67193AB1FF52C434C891D101 /* NativeVoiceCallControls.swift */,
+                6E961040D1109C2984594A22 /* MemoryLearningView.swift */,
+                E22B4E4B97020DDC0AEC944A /* GroupsView.swift */,
+                4974DFCC953C0BFED1259AAB /* GroupEditorView.swift */,
+                888013EB33E75679ED0BDF2B /* GroupConversationView.swift */,
+                C2F4E6EC509A64CCB623F492 /* ComposerSettingsControls.swift */,
+                5FD7CFC7D85623C6D779F93F /* ChatAppearance.swift */,
+                F2D475FEA04A82CC2E15B367 /* ConversationHistoryList.swift */,
+				5C011A000000000000000002 /* ChatTranscriptScrolling.swift */,
+				D92ECAB8B869338A5C0B476A /* ChatView.swift */,
+                99B900000000000000000002 /* MacSelectableChatMessage.swift */,
+                99B400000000000000000002 /* LiveVoiceViews.swift */,
+                99B700000000000000000002 /* BotSettingsResourcesView.swift */,
+                99B800000000000000000002 /* AvatarViews.swift */,
+                99B600000000000000000002 /* AutomationsView.swift */,
+                99B500000000000000000002 /* BrowserUseViews.swift */,
+                99C000000000000000000002 /* OnboardingWelcomeView.swift */,
+                99C0F1000000000000000004 /* ManagedConnectAppsViews.swift */,
+                99C0F4000000000000000002 /* ConnectionsPlatformSetupViews.swift */,
+                99C0F1000000000000000002 /* OutputFilesViews.swift */,
+                A55100000000000000000002 /* AssistantSetupView.swift */,
+                99C000000000000000000008 /* NewBotView.swift */,
+                99C000000000000000000006 /* VoiceEntryButton.swift */,
+                99C000000000000000000004 /* ConnectOtherBaseSheet.swift */,
+                99C0F2000000000000000002 /* OwnerPairingOfferViews.swift */,
+                C61200000000000000000006 /* PairingInvitationQRCode.swift */,
+                C61200000000000000000004 /* PairingQRScanner.swift */,
+                C61200000000000000000002 /* IOSMacConnectionView.swift */,
+                99C0F3000000000000000002 /* OwnerPairingClaimsViews.swift */,
+                99B300000000000000000002 /* MacChatComposer.swift */,
+				A77A00000000000000000001 /* NativeActionSceneRouter.swift */,
+				A77A00000000000000000002 /* IOSNativeActions.swift */,
+				A16EB7BCAD37934325EE25F4 /* DevicesView.swift */,
+                DCE7A0122026101200000002 /* DeviceConversationRoutesView.swift */,
+                DCE7A0132026101200000002 /* MemoryBackendSettingsView.swift */,
+				725BC79818407C4AC9F38940 /* DexterApp.swift */,
+				87EE6AE64525A4CC383B9758 /* DexterRootView.swift */,
+				6F83B153DCB0BCE0BCB60D5D /* SettingsView.swift */,
+                99AA00000000000000000003 /* MacAgentSettingsView.swift */,
+                99AD00000000000000000003 /* MacSelectedFilesView.swift */,
+                99AD00000000000000000004 /* MacCuaConfigurationView.swift */,
+                DCE7A0142026101400000002 /* MacScreenControlSheet.swift */,
+                99AE00000000000000000002 /* BotProfileView.swift */,
+                99B200000000000000000002 /* MacBotInspectorView.swift */,
+                99B100000000000000000002 /* BotDocumentsView.swift */,
+                A7EA00000000000000000002 /* TeamsView.swift */,
+                99AF00000000000000000002 /* BotDelegationsView.swift */,
+                99B000000000000000000002 /* SkillsView.swift */,
+                99AB00000000000000000003 /* McpConnectionsView.swift */,
+				41B1ECB344AF6F9CF85CC88F /* View+ErrorAlert.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		791CA5ECC6E04EA062E1AD49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A1B301357EBDB1326E81D0 /* DexterIOS.app */,
+				23057759A02EC45C914168BE /* DexterMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B526E228B64B85797E112E01 /* SharedApp */ = {
+			isa = PBXGroup;
+			children = (
+				6231E535C53E3493A92B67D7 /* Sources */,
+				A77A00000000000000000009 /* Resources */,
+			);
+			path = SharedApp;
+			sourceTree = "<group>";
+		};
+		C8723D840406521B9E070EC2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A495FA962A279B8BAD7934EA /* apple */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		CC4D4B8934428CD28F24ABA7 = {
+			isa = PBXGroup;
+			children = (
+				C8723D840406521B9E070EC2 /* Packages */,
+				B526E228B64B85797E112E01 /* SharedApp */,
+				791CA5ECC6E04EA062E1AD49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A77A00000000000000000009 /* Resources */ = {isa = PBXGroup; children = (A77A00000000000000000005 /* Localizable.xcstrings */, A77A00000000000000000006 /* AppShortcuts.xcstrings */, 66681CE8F0D9466E8A3CAA315C198D1C /* InfoPlist.strings */, 8F8C80000000000000000004 /* Mac */, 99AC00000000000000000002 /* DexterAppIcon.icns */,); path = Resources; sourceTree = "<group>"; };
+		8F8C80000000000000000004 /* Mac */ = {isa = PBXGroup; children = (8F8C80000000000000000003 /* InfoPlist.strings */,); path = Mac; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A7F85EAE0628F5863CFE908 /* DexterMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578419542131BCF7E6F371C9 /* Build configuration list for PBXNativeTarget "DexterMac" */;
+			buildPhases = (
+				CF54F5835BC10DE77EA17365 /* Sources */,
+				248E9F66B4FB0A41F331C3D4 /* Frameworks */,
+				A77A0000000000000000000F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DexterMac;
+			packageProductDependencies = (
+				9E9A35B2580C6E579E63CE55 /* DexterHostClient */,
+				8A2FD9286B1AF5B940D1E575 /* DexterAppCore */,
+			);
+			productName = DexterMac;
+			productReference = 23057759A02EC45C914168BE /* DexterMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD9896953B1CBF5055CB4557 /* DexterIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4509D7A43D6102F7A6346B2 /* Build configuration list for PBXNativeTarget "DexterIOS" */;
+			buildPhases = (
+				5B96A7BF2B2D25619C914B21 /* Sources */,
+				17877102A449B80D2AA7B252 /* Frameworks */,
+				A77A0000000000000000000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DexterIOS;
+			packageProductDependencies = (
+				12DC8CEA13505EB486BE19D3 /* DexterHostClient */,
+				67519D910B0BFBA277C8B171 /* DexterAppCore */,
+				A77A0000000000000000000C /* DexterNativeActions */,
+				B026960DE676433599137A8B /* DexterIOSCapabilities */,
+			);
+			productName = DexterIOS;
+			productReference = 03A1B301357EBDB1326E81D0 /* DexterIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D0354FDDFBEEEE28BC4C29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = E60B56E9978F3C57B80877A7 /* Build configuration list for PBXProject "DexterApple" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"pt-BR",
+			);
+			mainGroup = CC4D4B8934428CD28F24ABA7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				302D078272B4405A5D52417E /* XCLocalSwiftPackageReference "." */,
+				A77A0000000000000000000B /* XCLocalSwiftPackageReference "NativeActions" */,
+				A1212AFB9403479C8A67DDB4 /* XCLocalSwiftPackageReference "Capabilities" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 791CA5ECC6E04EA062E1AD49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A7F85EAE0628F5863CFE908 /* DexterMac */,
+				CD9896953B1CBF5055CB4557 /* DexterIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77A0000000000000000000A /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A77A00000000000000000007 /* Localizable.xcstrings in Resources */, A77A00000000000000000008 /* AppShortcuts.xcstrings in Resources */, 48A7787F0D7A474DB451312B /* InfoPlist.strings in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+		A77A0000000000000000000F /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A77A0000000000000000000E /* Localizable.xcstrings in Resources */, 99AC00000000000000000001 /* DexterAppIcon.icns in Resources */, 8F7C70000000000000000001 /* InfoPlist.strings in Mac Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B96A7BF2B2D25619C914B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+                C61200000000000000000003 /* PairingQRScanner.swift in Sources */,
+                C61200000000000000000001 /* IOSMacConnectionView.swift in Sources */,
+				99C0F1000000000000000005 /* ManagedConnectAppsViews.swift in Sources */,
+				5C011A000000000000000003 /* ChatTranscriptScrolling.swift in Sources */,
+                E00D74A09C6ABD6314F21E50 /* ConversationHistoryList.swift in Sources */,
+				4F87D5586FCB2631D1D2EAD9 /* ChatView.swift in Sources */,
+				200A0DEAFB70F135C62A37FD /* DevicesView.swift in Sources */,
+				20D2588DD2159BE09740A0FE /* DexterApp.swift in Sources */,
+				A77A00000000000000000003 /* NativeActionSceneRouter.swift in Sources */,
+				A77A00000000000000000004 /* IOSNativeActions.swift in Sources */,
+				E4E0830D54A844EC57FCD5B7 /* DexterRootView.swift in Sources */,
+				20FAD043B9F05F5B35759536 /* SettingsView.swift in Sources */,
+                99AA00000000000000000001 /* MacAgentSettingsView.swift in Sources */,
+                99AB00000000000000000001 /* McpConnectionsView.swift in Sources */,
+				B5D623C2AD24DF9F76DC2B3E /* View+ErrorAlert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF54F5835BC10DE77EA17365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+                C61200000000000000000005 /* PairingInvitationQRCode.swift in Sources */,
+				5C011A000000000000000001 /* ChatTranscriptScrolling.swift in Sources */,
+                19E486979C38D6EB98A4C34D /* ConversationHistoryList.swift in Sources */,
+                6664BF628136A08E6A3C9186 /* NativeVoiceCallControls.swift in Sources */,
+                092B76BE0744140386E519FE /* MemoryLearningView.swift in Sources */,
+                C3C2D71CC32BE64044688C1A /* GroupsView.swift in Sources */,
+                71D54FE130C430E6C3700C5E /* GroupEditorView.swift in Sources */,
+                69949C09C25117ED71AA368A /* GroupConversationView.swift in Sources */,
+                A6D96C4F64C4F315ED987B2E /* ComposerSettingsControls.swift in Sources */,
+                E3C907864CDACB4B896B51E0 /* ChatAppearance.swift in Sources */,
+				272AA08911BA0FAD389F3FF3 /* ChatView.swift in Sources */,
+                99B900000000000000000001 /* MacSelectableChatMessage.swift in Sources */,
+                99B400000000000000000001 /* LiveVoiceViews.swift in Sources */,
+                99B700000000000000000001 /* BotSettingsResourcesView.swift in Sources */,
+                99B800000000000000000001 /* AvatarViews.swift in Sources */,
+                99B600000000000000000001 /* AutomationsView.swift in Sources */,
+                99B500000000000000000001 /* BrowserUseViews.swift in Sources */,
+                99C000000000000000000001 /* OnboardingWelcomeView.swift in Sources */,
+                99C0F1000000000000000003 /* ManagedConnectAppsViews.swift in Sources */,
+                99C0F4000000000000000001 /* ConnectionsPlatformSetupViews.swift in Sources */,
+                99C0F1000000000000000001 /* OutputFilesViews.swift in Sources */,
+                A55100000000000000000001 /* AssistantSetupView.swift in Sources */,
+                99C000000000000000000007 /* NewBotView.swift in Sources */,
+                99C000000000000000000005 /* VoiceEntryButton.swift in Sources */,
+                99C000000000000000000003 /* ConnectOtherBaseSheet.swift in Sources */,
+                99C0F2000000000000000001 /* OwnerPairingOfferViews.swift in Sources */,
+                99C0F3000000000000000001 /* OwnerPairingClaimsViews.swift in Sources */,
+                99B300000000000000000001 /* MacChatComposer.swift in Sources */,
+				27AED2FAB39FFE82AE691CD5 /* DevicesView.swift in Sources */,
+                DCE7A0122026101200000001 /* DeviceConversationRoutesView.swift in Sources */,
+                DCE7A0132026101200000001 /* MemoryBackendSettingsView.swift in Sources */,
+				4E73BF38AFFDDAB1AEEC16A0 /* DexterApp.swift in Sources */,
+				9CF10A4F05025CD0E12361F3 /* DexterRootView.swift in Sources */,
+				C8DFA3C3CA7738A5DB002D4B /* SettingsView.swift in Sources */,
+                99AA00000000000000000002 /* MacAgentSettingsView.swift in Sources */,
+                99AD00000000000000000001 /* MacSelectedFilesView.swift in Sources */,
+                99AD00000000000000000002 /* MacCuaConfigurationView.swift in Sources */,
+                DCE7A0142026101400000001 /* MacScreenControlSheet.swift in Sources */,
+                99AE00000000000000000001 /* BotProfileView.swift in Sources */,
+                99B200000000000000000001 /* MacBotInspectorView.swift in Sources */,
+                99B100000000000000000001 /* BotDocumentsView.swift in Sources */,
+                A7EA00000000000000000001 /* TeamsView.swift in Sources */,
+                99AF00000000000000000001 /* BotDelegationsView.swift in Sources */,
+                99B000000000000000000001 /* SkillsView.swift in Sources */,
+                99AB00000000000000000002 /* McpConnectionsView.swift in Sources */,
+				2D5ED2E92BC7031776C72F1F /* View+ErrorAlert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B781E932DAB46990741CD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SharedApp/iOS-Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.bot.ios;
+				PRODUCT_NAME = Dexter;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		466301E2A58F0B54A7E2F93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4B69D526959CAE2969F5226E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AF5335878CBF0483D5796165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SharedApp/iOS-Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.bot.ios;
+				PRODUCT_NAME = Dexter;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D28745840C8DCB6642BC7977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SharedApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.bot.mac;
+				PRODUCT_NAME = Dexter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		EA91692A65C405FDB72709C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SharedApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.bot.mac;
+				PRODUCT_NAME = Dexter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		578419542131BCF7E6F371C9 /* Build configuration list for PBXNativeTarget "DexterMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D28745840C8DCB6642BC7977 /* Debug */,
+				EA91692A65C405FDB72709C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A4509D7A43D6102F7A6346B2 /* Build configuration list for PBXNativeTarget "DexterIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B781E932DAB46990741CD70 /* Debug */,
+				AF5335878CBF0483D5796165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E60B56E9978F3C57B80877A7 /* Build configuration list for PBXProject "DexterApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B69D526959CAE2969F5226E /* Debug */,
+				466301E2A58F0B54A7E2F93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		302D078272B4405A5D52417E /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		A77A0000000000000000000B /* XCLocalSwiftPackageReference "NativeActions" */ = {isa = XCLocalSwiftPackageReference; relativePath = NativeActions; };
+		A1212AFB9403479C8A67DDB4 /* XCLocalSwiftPackageReference "Capabilities" */ = {isa = XCLocalSwiftPackageReference; relativePath = Capabilities; };
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12DC8CEA13505EB486BE19D3 /* DexterHostClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DexterHostClient;
+		};
+		67519D910B0BFBA277C8B171 /* DexterAppCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DexterAppCore;
+		};
+		8A2FD9286B1AF5B940D1E575 /* DexterAppCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DexterAppCore;
+		};
+		9E9A35B2580C6E579E63CE55 /* DexterHostClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DexterHostClient;
+		};
+		A77A0000000000000000000C /* DexterNativeActions */ = {isa = XCSwiftPackageProductDependency; package = A77A0000000000000000000B; productName = DexterNativeActions; };
+		B026960DE676433599137A8B /* DexterIOSCapabilities */ = {isa = XCSwiftPackageProductDependency; package = A1212AFB9403479C8A67DDB4; productName = DexterIOSCapabilities; };
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 54D0354FDDFBEEEE28BC4C29 /* Project object */;
+}

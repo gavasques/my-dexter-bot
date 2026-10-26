@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "lib": [
+      "ES2024",
+      "DOM"
+    ],
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../hub"
+    },
+    {
+      "path": "../gateway"
+    },
+    {
+      "path": "../contracts"
+    },
+    {
+      "path": "../engines"
+    }
+  ]
+}

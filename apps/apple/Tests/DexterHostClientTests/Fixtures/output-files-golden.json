@@ -1,0 +1,400 @@
+{
+ "generatedBy": "scripts/make-output-files-golden.mjs",
+ "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+ "botId": "bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+ "chosen": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-chosen-fvRCwj",
+ "deckSha256": "7728ae2f2c36e2aaafbe79ca14c87ae2f89e7c88c4390ecbbf82dce88706958d",
+ "calls": {
+  "status": {
+   "method": "GET",
+   "path": "/v1/output-files/status",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "revision": 1,
+    "persisted": true,
+    "current": {
+     "generation": 1,
+     "kind": "host_data_legacy",
+     "layout": "legacy",
+     "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-Dw5CTy",
+     "current": true,
+     "availability": "available",
+     "namespaces": {
+      "general": false,
+      "bots": true,
+      "teams": true
+     },
+     "createdAt": 1791870106336,
+     "retiredAt": null
+    },
+    "host": {
+     "platform": "darwin"
+    },
+    "scope": {
+     "botFileTools": "own_bot_namespace",
+     "teamFileTools": "team_namespace_revalidated",
+     "groupTurns": "no_file_tools",
+     "terminalCwd": "output_namespace_not_os_sandbox",
+     "engineNativeWorkspace": "internal_not_outputs",
+     "contextDocuments": "separate_custody",
+     "sharing": "not_implemented",
+     "remoteBrowsing": "owner_loopback_only",
+     "relayedBrowsing": "not_relayed"
+    },
+    "limits": {
+     "pageEntries": 200,
+     "scannedEntries": 10000,
+     "chunkBytes": 8388608,
+     "exportBytes": 2147483648,
+     "hashedBytes": 268435456,
+     "toolFileBytes": 65536,
+     "pairedChunkBytes": null
+    }
+   }
+  },
+  "locations": {
+   "method": "GET",
+   "path": "/v1/output-files/locations",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "revision": 1,
+    "items": [
+     {
+      "generation": 1,
+      "kind": "host_data_legacy",
+      "layout": "legacy",
+      "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-Dw5CTy",
+      "current": true,
+      "availability": "available",
+      "namespaces": {
+       "general": false,
+       "bots": true,
+       "teams": true
+      },
+      "createdAt": 1791870106336,
+      "retiredAt": null
+     }
+    ]
+   }
+  },
+  "namespaces": {
+   "method": "GET",
+   "path": "/v1/output-files/namespaces",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "generation": 1,
+    "items": [
+     {
+      "ref": "bot:bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+      "kind": "bot",
+      "id": "bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+      "label": "Analista é 📊",
+      "status": "active",
+      "exists": true,
+      "relativePath": "bot-files/bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2"
+     }
+    ],
+    "truncated": false
+   }
+  },
+  "entries": {
+   "method": "GET",
+   "path": "/v1/output-files/entries?namespace=bot%3Abot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2&path=.&limit=100",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "generation": 1,
+    "namespace": "bot:bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+    "path": ".",
+    "exists": true,
+    "items": [
+     {
+      "name": "notas",
+      "path": "notas",
+      "type": "directory",
+      "bytes": null,
+      "modifiedAt": 1791870106344,
+      "mediaType": null
+     },
+     {
+      "name": "slides",
+      "path": "slides",
+      "type": "directory",
+      "bytes": null,
+      "modifiedAt": 1791870106345,
+      "mediaType": null
+     }
+    ],
+    "nextCursor": null,
+    "hidden": {
+     "secretLike": 0,
+     "internal": 0
+    },
+    "truncated": false
+   }
+  },
+  "entriesSlides": {
+   "method": "GET",
+   "path": "/v1/output-files/entries?namespace=bot%3Abot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2&path=slides&limit=100",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "generation": 1,
+    "namespace": "bot:bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+    "path": "slides",
+    "exists": true,
+    "items": [
+     {
+      "name": "apresentação.pptx",
+      "path": "slides/apresentação.pptx",
+      "type": "file",
+      "bytes": 300,
+      "modifiedAt": 1791870106345,
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+     }
+    ],
+    "nextCursor": null,
+    "hidden": {
+     "secretLike": 0,
+     "internal": 0
+    },
+    "truncated": false
+   }
+  },
+  "item": {
+   "method": "GET",
+   "path": "/v1/output-files/item?namespace=bot%3Abot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2&path=slides%2Fapresenta%C3%A7%C3%A3o.pptx",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "generation": 1,
+    "namespace": "bot:bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+    "path": "slides/apresentação.pptx",
+    "name": "apresentação.pptx",
+    "bytes": 300,
+    "modifiedAt": 1791870106345,
+    "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "pin": "3701696e2ddebc50a5e357b77e29a12dfe3d58065eb50787c0a5efea439f3ab3",
+    "sha256": "7728ae2f2c36e2aaafbe79ca14c87ae2f89e7c88c4390ecbbf82dce88706958d",
+    "exportable": true
+   }
+  },
+  "content": {
+   "method": "GET",
+   "path": "/v1/output-files/content?generation=1&namespace=bot%3Abot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2&path=slides%2Fapresenta%C3%A7%C3%A3o.pptx&pin=3701696e2ddebc50a5e357b77e29a12dfe3d58065eb50787c0a5efea439f3ab3&offset=0&length=8388608",
+   "status": 200,
+   "responseBase64": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWltcXV5fYGFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmqq6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+/wABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicoKSor"
+  },
+  "destination": {
+   "method": "PUT",
+   "path": "/v1/output-files/destination",
+   "status": 200,
+   "request": {
+    "expectedHostID": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "clientRequestId": "golden-destination-1",
+    "expectedRevision": 1,
+    "destination": {
+     "kind": "owner_path",
+     "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-chosen-fvRCwj"
+    }
+   },
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "clientRequestId": "golden-destination-1",
+    "requestHash": "32b2030baa9a265650e6923e56eb2b6d6227fc332429f5712df61933bae71525",
+    "previousRevision": 1,
+    "revision": 2,
+    "previousGeneration": 1,
+    "generation": 2,
+    "destination": {
+     "kind": "owner_path",
+     "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-chosen-fvRCwj"
+    },
+    "existingFilesMoved": false,
+    "createdAt": 1791870106360
+   }
+  },
+  "receipt": {
+   "method": "GET",
+   "path": "/v1/output-files/receipts/golden-destination-1",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "clientRequestId": "golden-destination-1",
+    "requestHash": "32b2030baa9a265650e6923e56eb2b6d6227fc332429f5712df61933bae71525",
+    "previousRevision": 1,
+    "revision": 2,
+    "previousGeneration": 1,
+    "generation": 2,
+    "destination": {
+     "kind": "owner_path",
+     "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-chosen-fvRCwj"
+    },
+    "existingFilesMoved": false,
+    "createdAt": 1791870106360
+   }
+  },
+  "statusAfter": {
+   "method": "GET",
+   "path": "/v1/output-files/status",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "revision": 2,
+    "persisted": true,
+    "current": {
+     "generation": 2,
+     "kind": "owner_path",
+     "layout": "v1",
+     "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-chosen-fvRCwj",
+     "current": true,
+     "availability": "available",
+     "namespaces": {
+      "general": true,
+      "bots": true,
+      "teams": true
+     },
+     "createdAt": 1791870106360,
+     "retiredAt": null
+    },
+    "host": {
+     "platform": "darwin"
+    },
+    "scope": {
+     "botFileTools": "own_bot_namespace",
+     "teamFileTools": "team_namespace_revalidated",
+     "groupTurns": "no_file_tools",
+     "terminalCwd": "output_namespace_not_os_sandbox",
+     "engineNativeWorkspace": "internal_not_outputs",
+     "contextDocuments": "separate_custody",
+     "sharing": "not_implemented",
+     "remoteBrowsing": "owner_loopback_only",
+     "relayedBrowsing": "not_relayed"
+    },
+    "limits": {
+     "pageEntries": 200,
+     "scannedEntries": 10000,
+     "chunkBytes": 8388608,
+     "exportBytes": 2147483648,
+     "hashedBytes": 268435456,
+     "toolFileBytes": 65536,
+     "pairedChunkBytes": null
+    }
+   }
+  },
+  "locationsAfter": {
+   "method": "GET",
+   "path": "/v1/output-files/locations",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "revision": 2,
+    "items": [
+     {
+      "generation": 2,
+      "kind": "owner_path",
+      "layout": "v1",
+      "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-chosen-fvRCwj",
+      "current": true,
+      "availability": "available",
+      "namespaces": {
+       "general": true,
+       "bots": true,
+       "teams": true
+      },
+      "createdAt": 1791870106360,
+      "retiredAt": null
+     },
+     {
+      "generation": 1,
+      "kind": "host_data_legacy",
+      "layout": "legacy",
+      "path": "/private/var/folders/_n/8x5tg4ln017g2vyvt54vc1_c0000gn/T/dx-outputs-golden-Dw5CTy",
+      "current": false,
+      "availability": "available",
+      "namespaces": {
+       "general": false,
+       "bots": true,
+       "teams": true
+      },
+      "createdAt": 1791870106336,
+      "retiredAt": 1791870106360
+     }
+    ]
+   }
+  },
+  "namespacesAfter": {
+   "method": "GET",
+   "path": "/v1/output-files/namespaces",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "generation": 2,
+    "items": [
+     {
+      "ref": "general",
+      "kind": "general",
+      "id": null,
+      "label": null,
+      "status": "active",
+      "exists": true,
+      "relativePath": ""
+     },
+     {
+      "ref": "bot:bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+      "kind": "bot",
+      "id": "bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2",
+      "label": "Analista é 📊",
+      "status": "active",
+      "exists": true,
+      "relativePath": "Bots/bot_30a1b2dc-53eb-4cd5-ae24-4b24e544d1f2"
+     }
+    ],
+    "truncated": false
+   }
+  },
+  "general": {
+   "method": "GET",
+   "path": "/v1/output-files/entries?namespace=general&path=.&limit=100",
+   "status": 200,
+   "response": {
+    "version": 1,
+    "hostId": "host_74faad59-8119-4188-973f-ea27cd42f3f7",
+    "generation": 2,
+    "namespace": "general",
+    "path": ".",
+    "exists": true,
+    "items": [
+     {
+      "name": "Bots",
+      "path": "Bots",
+      "type": "directory",
+      "bytes": null,
+      "modifiedAt": 1791870106363,
+      "mediaType": null
+     }
+    ],
+    "nextCursor": null,
+    "hidden": {
+     "secretLike": 0,
+     "internal": 0
+    },
+    "truncated": false
+   }
+  }
+ }
+}

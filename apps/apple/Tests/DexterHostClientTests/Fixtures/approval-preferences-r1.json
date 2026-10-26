@@ -1,0 +1,241 @@
+{
+  "bot": {
+    "id": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+    "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+    "profileId": "synthetic",
+    "name": "Synthetic contract fixture",
+    "defaultSelection": {
+      "engine": "codex",
+      "model": null,
+      "reasoningEffort": null,
+      "speed": null
+    },
+    "engine": "codex",
+    "createdAt": 1791824679243,
+    "roleDescription": "",
+    "avatarEmoji": null,
+    "canSeeBots": false,
+    "canReceiveOrders": false,
+    "canSendActions": false,
+    "isMaster": false,
+    "revision": 0,
+    "liveVoice": null,
+    "avatarImage": null
+  },
+  "thread": {
+    "id": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+    "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+    "createdAt": 1791824679245
+  },
+  "action": {
+    "id": "act_34aa5626-0a99-4ce8-816d-67c76fc99324",
+    "request": {
+      "arguments": {
+        "input": {
+          "command": "printf synthetic",
+          "runtime": "sh"
+        },
+        "pin": {
+          "workspacePin": "synthetic-v1"
+        }
+      },
+      "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+      "destination": "dexter-harness-owner-proposals",
+      "idempotencyKey": "fixture-action",
+      "threadId": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+      "tool": "dexter.harness.terminal.run"
+    },
+    "requestHash": "fd6dc37dbece677dc82fb992cf7ba85b35e60591377d4fae2ae2e770a994ab7d",
+    "grantRevision": 1,
+    "state": "awaiting_approval",
+    "createdAt": 1791824679261,
+    "updatedAt": 1791824679261,
+    "approvalExpiresAt": 1791825279261,
+    "decidedBy": null,
+    "result": null,
+    "reason": null,
+    "approvalType": {
+      "key": "e6ba1f9d677d26ed5df86ee6493f5ffe088eee99e4ceb147c8c0bc43d8668f65",
+      "eligible": true,
+      "reason": "eligible",
+      "category": "commands",
+      "revision": 0,
+      "enabled": false
+    }
+  },
+  "input": {
+    "expectedHostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+    "clientRequestId": "always-fixture",
+    "requestHash": "fd6dc37dbece677dc82fb992cf7ba85b35e60591377d4fae2ae2e770a994ab7d",
+    "decision": "allow",
+    "alwaysAccept": true,
+    "expectedTypeKey": "e6ba1f9d677d26ed5df86ee6493f5ffe088eee99e4ceb147c8c0bc43d8668f65",
+    "expectedPreferenceRevision": 0
+  },
+  "result": {
+    "receipt": {
+      "id": "arp_c03e4400-e957-4711-9525-48aba55ffe24",
+      "clientRequestId": "always-fixture",
+      "inputHash": "ac74ad11646675ae61542646bf11e96a7e548e441ba5ebbfdebb00667d6df790",
+      "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+      "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+      "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+      "kind": "decision",
+      "targetId": "act_34aa5626-0a99-4ce8-816d-67c76fc99324",
+      "input": {
+        "expectedHostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+        "clientRequestId": "always-fixture",
+        "requestHash": "fd6dc37dbece677dc82fb992cf7ba85b35e60591377d4fae2ae2e770a994ab7d",
+        "decision": "allow",
+        "alwaysAccept": true,
+        "expectedTypeKey": "e6ba1f9d677d26ed5df86ee6493f5ffe088eee99e4ceb147c8c0bc43d8668f65",
+        "expectedPreferenceRevision": 0
+      },
+      "previous": null,
+      "state": {
+        "actionId": "act_34aa5626-0a99-4ce8-816d-67c76fc99324",
+        "requestHash": "fd6dc37dbece677dc82fb992cf7ba85b35e60591377d4fae2ae2e770a994ab7d",
+        "decision": "allow",
+        "preference": {
+          "key": "e6ba1f9d677d26ed5df86ee6493f5ffe088eee99e4ceb147c8c0bc43d8668f65",
+          "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+          "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+          "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+          "tool": "dexter.harness.terminal.run",
+          "destination": "dexter-harness-owner-proposals",
+          "grantRevision": 1,
+          "authorityEpoch": 1,
+          "pinsHash": "cd5cfc38ff5ec03b5402d8db73783138dc31d324ea6308d2470ebe8c983269d1",
+          "revision": 1,
+          "enabled": true,
+          "receiptId": "arp_c03e4400-e957-4711-9525-48aba55ffe24",
+          "updatedAt": 1791824679269
+        }
+      },
+      "createdAt": 1791824679269,
+      "revocationEffects": {
+        "blockedActionIds": [],
+        "abortedActionIds": []
+      }
+    },
+    "action": {
+      "id": "act_34aa5626-0a99-4ce8-816d-67c76fc99324",
+      "request": {
+        "arguments": {
+          "input": {
+            "command": "printf synthetic",
+            "runtime": "sh"
+          },
+          "pin": {
+            "workspacePin": "synthetic-v1"
+          }
+        },
+        "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+        "destination": "dexter-harness-owner-proposals",
+        "idempotencyKey": "fixture-action",
+        "threadId": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+        "tool": "dexter.harness.terminal.run"
+      },
+      "requestHash": "fd6dc37dbece677dc82fb992cf7ba85b35e60591377d4fae2ae2e770a994ab7d",
+      "grantRevision": 1,
+      "state": "ready",
+      "createdAt": 1791824679261,
+      "updatedAt": 1791824679269,
+      "approvalExpiresAt": 1791825279261,
+      "decidedBy": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+      "result": null,
+      "reason": null,
+      "approvalType": {
+        "key": "e6ba1f9d677d26ed5df86ee6493f5ffe088eee99e4ceb147c8c0bc43d8668f65",
+        "eligible": true,
+        "reason": "eligible",
+        "category": "commands",
+        "revision": 1,
+        "enabled": true
+      },
+      "authorization": {
+        "source": "owner_type",
+        "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+        "policyRevision": 1,
+        "policyReceiptId": "arp_c03e4400-e957-4711-9525-48aba55ffe24",
+        "eligibleScopeVersion": "d03.execution.v1"
+      }
+    }
+  },
+  "modeInput": {
+    "expectedHostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+    "clientRequestId": "chat-fixture",
+    "expectedRevision": 0,
+    "overrideMode": "accept_edits"
+  },
+  "modeReceipt": {
+    "id": "arp_3459d9c9-0e3b-4b95-bc48-0842f0cba9be",
+    "clientRequestId": "chat-fixture",
+    "inputHash": "d02fe3840f79ebc8e13821dd5b430b12a15206c28456cd8ff0472566bce815da",
+    "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+    "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+    "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+    "kind": "chat_mode",
+    "targetId": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+    "input": {
+      "expectedHostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+      "clientRequestId": "chat-fixture",
+      "expectedRevision": 0,
+      "overrideMode": "accept_edits"
+    },
+    "previous": {
+      "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+      "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+      "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+      "threadId": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+      "overrideMode": null,
+      "revision": 0,
+      "receiptId": null,
+      "updatedAt": 0
+    },
+    "state": {
+      "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+      "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+      "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+      "threadId": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+      "overrideMode": "accept_edits",
+      "revision": 1,
+      "receiptId": "arp_3459d9c9-0e3b-4b95-bc48-0842f0cba9be",
+      "updatedAt": 1791824679274
+    },
+    "createdAt": 1791824679274,
+    "revocationEffects": {
+      "blockedActionIds": [],
+      "abortedActionIds": []
+    }
+  },
+  "effective": {
+    "thread": {
+      "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+      "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+      "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+      "threadId": "thr_dcab92b1-efcd-4557-889d-9146263595c0",
+      "overrideMode": "accept_edits",
+      "revision": 1,
+      "receiptId": "arp_3459d9c9-0e3b-4b95-bc48-0842f0cba9be",
+      "updatedAt": 1791824679274
+    },
+    "bot": {
+      "hostId": "host_86130870-7a01-4b8c-9e19-58023e11e5f8",
+      "botId": "bot_988cd855-a1fa-4f0c-a4b3-4c7a1708d6f1",
+      "ownerId": "own_c6c30fef-cba0-4b1a-80c3-0054a7ed74e1",
+      "mode": "ask",
+      "revision": 0,
+      "eligibleScopeVersion": "d03.execution.v1",
+      "updatedAt": 0,
+      "receiptId": null
+    },
+    "mode": "accept_edits",
+    "source": "chat_override",
+    "effects": {
+      "edits": true,
+      "commands": false,
+      "routine": false
+    }
+  }
+}
